@@ -1,6 +1,45 @@
 .navigation {
-  background-color: #f7f7f7 !important;
-  color: black;
-  min-height: 10vh;
+  background-color: transparent;
+  max-height: 5vh;
   position: relative;
+  font-size: 1.15rem;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent !important;
+}
+
+.navigation li {
+  float: right;
+}
+
+.navigation li a {
+  display: block;
+  color: #ffe479;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 130%;
+}
+
+.heading {
+  float: left !important;
+  font-size: 1.5rem;
+}
+
+.navigation li button {
+  background-color: transparent;
+  border: transparent;
+  margin: 16px;
+  font-size: 20px;
+}
+
+/* Change the link color on hover */
+.navigation li a:hover,
+button:hover {
+  color: #ffffff !important;
 }

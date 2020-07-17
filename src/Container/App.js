@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 import Resume from "../Components/Resume/Resume";
-import Navigation from "../Components/Resume/Navigation/index";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const personalInfo = {
@@ -22,8 +21,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Navigation />
-        <Resume personalInfo={this.state.personalInfo} />
+        <div>
+          <Resume personalInfo={this.state.personalInfo} />
+        </div>
       </Router>
     );
   }

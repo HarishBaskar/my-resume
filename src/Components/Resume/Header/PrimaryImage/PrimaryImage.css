@@ -1,6 +1,6 @@
 .side {
-  max-height: 20rem;
-  max-width: 20rem;
+  max-height: 15rem;
+  max-width: 15rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -37,7 +37,7 @@
 }
 
 .picture-shadow {
-  border-radius: 290486px;
+  border-radius: 50%;
   background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%) !important;
   position: absolute;
   top: 10%;

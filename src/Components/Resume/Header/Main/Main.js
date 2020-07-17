@@ -4,7 +4,7 @@ import "./Main.css";
 const main = ({ personalInfo }) => {
   return (
     <main className="about">
-      <h1 className="name">Hi, I'm {personalInfo.name}</h1>
+      <h1 className="name">{personalInfo.name}</h1>
       <p className="job">{personalInfo.job}</p>
       <hr className="hr" />
       <div className="description">
@@ -18,15 +18,15 @@ const main = ({ personalInfo }) => {
         </a>
       </div>
       <div>
-        <ul class="social">
+        <ul className="social">
           <li>
             <a href={personalInfo.githuburl}>
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
           </li>
           <li>
             <a href={personalInfo.linkedinurl}>
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </li>
         </ul>

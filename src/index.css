@@ -74,7 +74,7 @@ th:not([align]) {
 
 html {
   background-color: #485461;
-  background-image: linear-gradient(to bottom right, #28313b, #485461);
+  background-image: linear-gradient(to right, #28313b, #302b63, #24243e);
   color: #fff;
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
