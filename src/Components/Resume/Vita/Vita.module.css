@@ -1,9 +1,10 @@
 .vita {
-  background-color: transparent !important;
+  background-color: transparent;
   color: white;
   min-height: auto;
   position: relative;
   font-size: 1em !important;
+  padding: 4rem 0;
 }
 
 * {
@@ -14,16 +15,19 @@
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 5px auto;
-  margin-bottom: 20px !important;
+  margin: 0 auto;
   font-size: 0.5em;
 }
 
 .header {
-  margin: 20px auto !important;
+  font-size: 2.25rem;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 0.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 1.5em;
-  color: #ffe479;
 }
 
 .timeline h2 {
@@ -140,10 +144,13 @@
   }
 
   .header {
-    margin: 20px 10px !important;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 0.4rem;
+    margin-left: 1rem !important;
+    margin-bottom: 2rem;
     text-align: left;
-    font-size: 1.25rem;
-    color: #ffe479;
   }
 
   /* Full-width containers */

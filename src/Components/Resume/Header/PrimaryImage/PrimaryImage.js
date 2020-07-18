@@ -1,5 +1,5 @@
 import React from "react";
-import Picture from "../../../../Images/harish_baskar.JPG";
+import Portrait from "../../../../Images/harish_baskar.JPG";
 import "./PrimaryImage.css";
 
 const primaryImage = () => {
@@ -10,10 +10,9 @@ const primaryImage = () => {
         <img
           id="pictureImage"
           className="picture-image"
-          src={Picture}
+          title="Harish Baskar"
+          src={Portrait}
           alt="Portrait of Harish Baskar"
-          width="320"
-          height="320"
         />
       </figure>
     </aside>
