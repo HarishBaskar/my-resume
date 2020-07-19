@@ -5,6 +5,13 @@
   position: relative;
   font-size: 1em !important;
   padding: 4rem 0;
+  background-image: url("../../../Images/timelapse.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 * {

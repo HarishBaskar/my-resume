@@ -1,6 +1,13 @@
 .topcontainer {
   background-color: transparent;
   position: relative;
+  background-image: url("../../../Images/timelapse.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 .testimonials {
