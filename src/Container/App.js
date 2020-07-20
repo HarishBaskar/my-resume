@@ -6,7 +6,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 const personalInfo = {
   name: "Harish Baskar",
   job: "Software Developer",
-  description: "Musicophile, Cyanophilist",
   skills: "React.js, Redux, Rest API, AWS",
   mail: "mailto:harishbaskar94@gmail.com",
   githuburl: "https://github.com/HarishBaskar",

@@ -18,8 +18,8 @@ const transformElement = (percentage) => {
           background: `rgba(175, 60, 162, ${percentage * 0.5})`,
           transform: "scale(2, 3)",
           borderRadius: "50%",
-          width: percentage * 600,
-          height: percentage * 600,
+          width: percentage * 700,
+          height: percentage * 700,
         }}
       />
     </div>

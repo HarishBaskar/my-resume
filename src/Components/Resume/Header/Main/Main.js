@@ -8,7 +8,16 @@ const main = ({ personalInfo }) => {
       <p className="job">{personalInfo.job}</p>
       <hr className="hr" />
       <div className="description">
-        <p>{personalInfo.description}</p>
+        <p>
+          Musicophile
+          <span role="img" aria-label="blueheart">
+            &#128153;
+          </span>
+          &nbsp;Cynophilist
+          <span role="img" aria-label="dog">
+            &#128054;
+          </span>
+        </p>
         <br />
         <p>Skills/Interests: {personalInfo.skills}</p>
       </div>
