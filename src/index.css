@@ -73,7 +73,8 @@ th:not([align]) {
 }
 
 html {
-  background-color: white;
+  background-color: #485461;
+  background-image: linear-gradient(to right, #28313b, #24243e);
   color: #fff;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 1em;

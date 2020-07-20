@@ -7,6 +7,8 @@ import Navigation from "../Navigation/index";
 const Header = ({ personalInfo }) => {
   return (
     <div>
+      <div className="wallpaper"></div>
+      <Navigation />
       <div className="content">
         <PrimaryImage />
         <Main personalInfo={personalInfo} />

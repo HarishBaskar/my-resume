@@ -1,15 +1,16 @@
 .aboutme {
   background-color: transparent;
-  color: #ffe479;
-  min-height: 50vh;
+  color: #555;
+  font-family: "Helvetica", "Arial", sans-serif;
+  height: 80vh !important;
   padding-top: 2rem;
   margin: 0 auto;
 }
 
 .aboutme h1 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: bolder;
-  color: white;
+  color: #333;
   letter-spacing: 0.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -17,7 +18,9 @@
 }
 
 .aboutme p {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
+  line-height: 1.5;
+  padding: 2em 0.5em;
 }

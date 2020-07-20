@@ -128,7 +128,7 @@
 .social a:hover {
   opacity: 1;
   transform: scale(1.25);
-  color: aqua;
+  color: #ffcccc;
 }
 
 .social a:active {
