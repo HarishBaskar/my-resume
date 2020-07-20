@@ -18,12 +18,29 @@
 .content {
   display: flex;
   position: relative;
-  min-height: 100vh !important;
+  min-height: 85vh !important;
 }
 
 .navigation {
   display: flex;
   position: relative;
+}
+
+.downarrow {
+  align-items: center;
+  border: 2rem solid white;
+  border-width: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  padding: 0.4rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+}
+
+.arrowcontainer {
+  margin-left: 50%;
+  min-height: 6vh;
+  margin-bottom: 4vh;
 }
 
 @media screen and (max-width: 799px) {
@@ -32,6 +49,10 @@
     justify-content: center;
     align-items: center;
     padding: 5rem 3rem;
+  }
+
+  .arrowcontainer {
+    margin-left: 50%;
   }
 }
 

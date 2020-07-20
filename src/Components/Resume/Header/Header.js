@@ -13,6 +13,9 @@ const Header = ({ personalInfo }) => {
         <PrimaryImage />
         <Main personalInfo={personalInfo} />
       </div>
+      <div className="arrowcontainer">
+        <i className="downarrow"></i>
+      </div>
     </div>
   );
 };
