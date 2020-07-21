@@ -1,13 +1,13 @@
 import React from "react";
-import "./Main.css";
+import Styles from "./Main.module.css";
 
 const main = ({ personalInfo }) => {
   return (
-    <main className="about">
-      <h1 className="name">{personalInfo.name}</h1>
-      <p className="job">{personalInfo.job}</p>
-      <hr className="hr" />
-      <div className="description">
+    <main className={Styles.about}>
+      <h1 className={Styles.name}>{personalInfo.name}</h1>
+      <p className={Styles.job}>{personalInfo.job}</p>
+      <hr className={Styles.hr} />
+      <div className={Styles.description}>
         <p>
           Musicophile
           <span role="img" aria-label="blueheart">
@@ -21,13 +21,13 @@ const main = ({ personalInfo }) => {
         <br />
         <p>Skills/Interests: {personalInfo.skills}</p>
       </div>
-      <div className="contact">
-        <a className="button" href="mailto:harishbaskar94@gmail.com">
+      <div className={Styles.contact}>
+        <a className={Styles.button} href="mailto:harishbaskar94@gmail.com">
           Get in touch
         </a>
       </div>
       <div>
-        <ul className="social">
+        <ul className={Styles.social}>
           <li>
             <a href={personalInfo.githuburl}>
               <i className="fab fa-github"></i>

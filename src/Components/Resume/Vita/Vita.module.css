@@ -114,7 +114,7 @@
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
   .vita {
     font-size: 1rem !important;
   }
@@ -135,12 +135,12 @@
     font-weight: bolder;
     margin: 6px auto;
     color: #333;
-    font-size: 2em;
+    font-size: 0.8rem;
   }
 
   .timeline p {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .header {

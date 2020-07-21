@@ -1,8 +1,8 @@
 .side {
   margin-bottom: 2rem;
   width: 100%;
-  max-height: 14rem;
-  max-width: 14rem;
+  max-height: 15rem;
+  max-width: 15rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -25,8 +25,8 @@
   }
 }
 
-.picture-shadow,
-.picture-image {
+.pictureshadow,
+.pictureimage {
   display: block;
   height: 100%;
   left: 0;
@@ -42,14 +42,14 @@
   transform-style: preserve-3d;
 }
 
-.picture-shadow {
+.pictureshadow {
   border-radius: 50%;
   background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%) !important;
   position: absolute;
   top: 10%;
 }
 
-.picture-image {
-  border-radius: 290486px;
+.pictureimage {
+  border-radius: 50%;
   position: absolute;
 }
