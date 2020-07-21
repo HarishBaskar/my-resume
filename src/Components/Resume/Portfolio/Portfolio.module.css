@@ -23,3 +23,27 @@
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 799px) {
+  .portfolio {
+    max-width: 50em;
+  }
+
+  .portfolio h1 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #333;
+    letter-spacing: 0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .portfolio p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+  }
+}

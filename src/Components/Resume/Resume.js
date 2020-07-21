@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header/Header";
-import "./Resume.css";
 import AboutMe from "./AboutMe/index";
 import Portfolio from "./Portfolio/index";
 import Vita from "./Vita/index";
@@ -8,6 +7,7 @@ import Testimonials from "./Testimonials/index";
 import Footer from "./Footer/index";
 import { Parallax } from "react-parallax";
 import Wallpaper1 from "../../Images/wallpaper1.jpg";
+import Styles from "./Resume.module.css";
 
 const transformElement = (percentage) => {
   return (
@@ -28,42 +28,44 @@ const transformElement = (percentage) => {
 
 const resume = ({ personalInfo }) => {
   return (
-    <div>
+    <div className={Styles.topresumecontainer}>
       <Header personalInfo={personalInfo} />
-      <div className="resumecontainer">
-        <div className="whitesection">
+      <div className={Styles.resumecontainer}>
+        <div className={Styles.whitesection}>
           <AboutMe />
         </div>
         <Parallax
           bgImage={Wallpaper1}
           strength={300}
-          className="parallaxcontainer"
+          className={Styles.parallaxcontainer}
           renderLayer={(percentage) => transformElement(percentage)}
         >
           <div style={{ height: 700 }}>
-            <div className="insidestyles"></div>
+            <div className={Styles.insidestyles}></div>
           </div>
         </Parallax>
         <Vita />
         <Parallax
           bgImage={Wallpaper1}
           strength={400}
-          className="parallaxcontainer"
+          className={Styles.parallaxcontainer}
           renderLayer={(percentage) => transformElement(percentage)}
         >
           <div style={{ height: 800 }}>
-            <div className="insidestyles"></div>
+            <div className={Styles.insidestyles}></div>
           </div>
         </Parallax>
-        <Portfolio />
+        <div className={Styles.whitesection}>
+          <Portfolio />
+        </div>
         <Parallax
           bgImage={Wallpaper1}
           strength={500}
-          className="parallaxcontainer"
+          className={Styles.parallaxcontainer}
           renderLayer={(percentage) => transformElement(percentage)}
         >
           <div style={{ height: 800 }}>
-            <div className="insidestyles"></div>
+            <div className={Styles.insidestyles}></div>
           </div>
         </Parallax>
         <Testimonials />

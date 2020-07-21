@@ -3,7 +3,7 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 799px) {
   .about {
     font-size: 0.8rem !important;
   }
