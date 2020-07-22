@@ -74,9 +74,9 @@ th:not([align]) {
 
 html {
   background-color: #485461;
-  background-image: linear-gradient(to right, #28313b, #302b63, #24243e);
+  background-image: linear-gradient(to right, #28313b, #24243e);
   color: #fff;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 1em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -87,7 +87,7 @@ html {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 358px) {
   html {
     min-width: 100vh;
   }

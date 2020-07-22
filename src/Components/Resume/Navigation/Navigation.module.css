@@ -43,3 +43,12 @@
 button:hover {
   color: #ffffff !important;
 }
+
+@media screen and (max-width: 799px) {
+  .navigation {
+    background-color: transparent;
+    max-height: 5vh;
+    position: relative;
+    font-size: 1rem;
+  }
+}

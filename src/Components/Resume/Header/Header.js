@@ -1,17 +1,20 @@
 import React from "react";
 import PrimaryImage from "./PrimaryImage/PrimaryImage";
 import Main from "./Main/Main";
-import "./Header.css";
+import Styles from "./Header.module.css";
 import Navigation from "../Navigation/index";
 
 const Header = ({ personalInfo }) => {
   return (
     <div>
-      <div className="wallpaper"></div>
-      <Navigation className="navigation" />
-      <div className="content">
+      <div className={Styles.wallpaper}></div>
+      <Navigation />
+      <div className={Styles.content}>
         <PrimaryImage />
         <Main personalInfo={personalInfo} />
+      </div>
+      <div className={Styles.arrowcontainer}>
+        <i className={Styles.downarrow}></i>
       </div>
     </div>
   );

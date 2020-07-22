@@ -1,0 +1,66 @@
+.wallpaper {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+}
+
+.wallpaper {
+  background-image: url("../../../Images/timelapse.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.4;
+  position: fixed;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  min-height: 85vh !important;
+}
+
+.navigation {
+  display: flex;
+  position: relative;
+}
+
+.downarrow {
+  align-items: center;
+  border: 2rem solid white;
+  border-width: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  padding: 0.4rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+}
+
+.arrowcontainer {
+  margin-left: 50%;
+  min-height: 6vh;
+  margin-bottom: 4vh;
+}
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+
+  .arrowcontainer {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 4rem;
+  }
+}

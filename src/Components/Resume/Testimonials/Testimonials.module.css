@@ -1,6 +1,7 @@
 .topcontainer {
   background-color: transparent;
   position: relative;
+  margin-top: 2%;
 }
 
 .testimonials {
@@ -27,10 +28,10 @@
 }
 
 .card {
-  background-color: rgb(72, 84, 97, 0.2);
+  background-color: rgb(255, 204, 204, 0.2);
   transition: 0.3s;
   max-width: 18rem;
-  color: #ffe479;
+  color: #555;
   margin: 2rem;
   font-size: 2rem;
 }
@@ -57,9 +58,9 @@
 }
 
 .topcontainer h1 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: bolder;
-  color: white;
+  color: #333;
   letter-spacing: 0.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +70,7 @@
 }
 
 .testimonials h2 {
-  color: white;
+  color: #333;
 }
 
 .testimonials p {

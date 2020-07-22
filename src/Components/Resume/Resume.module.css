@@ -1,0 +1,38 @@
+.resumecontainer {
+  color: white;
+  background-color: #ffeeee;
+  position: relative;
+}
+
+.insidestyles {
+  background-color: transparent;
+  position: absolute;
+  top: 60vh;
+  left: 50%;
+  bottom: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.parallaxcontainer {
+  height: 50vh;
+}
+
+.whitesection {
+  padding: 2rem;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 600px) {
+  .whitesection {
+    padding: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+  }
+
+  .parallaxcontainer {
+    height: 50vh;
+  }
+}

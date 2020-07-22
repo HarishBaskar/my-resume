@@ -1,6 +1,6 @@
 .vita {
   background-color: transparent;
-  color: white;
+  color: #555;
   min-height: auto;
   position: relative;
   font-size: 1em !important;
@@ -20,9 +20,9 @@
 }
 
 .header {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: bolder;
-  color: white;
+  color: #333;
   letter-spacing: 0.4rem;
   margin-left: auto;
   margin-right: auto;
@@ -31,20 +31,20 @@
 }
 
 .timeline h2 {
-  font-size: 3em;
+  font-size: 1.2rem;
   margin: 6px auto;
 }
 
 .timeline h1 {
   font-weight: bolder;
   margin: 6px auto;
-  color: #ffe479;
-  font-size: 2em;
+  color: #333;
+  font-size: 1rem;
 }
 
 .timeline p {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1rem;
 }
 
 .header {
@@ -56,7 +56,7 @@
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #333;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -78,8 +78,8 @@
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: white;
-  border: 4px solid #ffe479;
+  background-color: #ffeeee;
+  border: 4px solid #555;
   top: 30px;
   border-radius: 50%;
   z-index: 1;
@@ -114,7 +114,7 @@
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
   .vita {
     font-size: 1rem !important;
   }
@@ -134,19 +134,19 @@
   .timeline h1 {
     font-weight: bolder;
     margin: 6px auto;
-    color: #ffe479;
-    font-size: 2em;
+    color: #333;
+    font-size: 0.8rem;
   }
 
   .timeline p {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .header {
     font-size: 1.5rem;
     font-weight: bolder;
-    color: white;
+    color: #333;
     letter-spacing: 0.4rem;
     margin-left: 1rem !important;
     margin-bottom: 2rem;
