@@ -9,6 +9,15 @@ import { Parallax } from "react-parallax";
 import Wallpaper1 from "../../Images/wallpaper1.jpg";
 import Styles from "./Resume.module.css";
 
+const personalInfo = {
+  name: "Harish Baskar",
+  job: "Software Developer",
+  skills: "React.js, Redux, Rest API, AWS",
+  mail: "mailto:harishbaskar94@gmail.com",
+  githuburl: "https://github.com/HarishBaskar",
+  linkedinurl: "https://www.linkedin.com/in/harish-baskar-96589a80",
+};
+
 const transformElement = (percentage) => {
   return (
     <div>
@@ -26,7 +35,7 @@ const transformElement = (percentage) => {
   );
 };
 
-const resume = ({ personalInfo }) => {
+const resume = () => {
   return (
     <div className={Styles.topresumecontainer}>
       <Header personalInfo={personalInfo} />

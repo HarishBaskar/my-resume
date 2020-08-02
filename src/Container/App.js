@@ -1,28 +1,23 @@
 import React, { Component } from "react";
 import "./App.css";
 import Resume from "../Components/Resume/Resume";
-import { BrowserRouter as Router } from "react-router-dom";
-
-const personalInfo = {
-  name: "Harish Baskar",
-  job: "Software Developer",
-  skills: "React.js, Redux, Rest API, AWS",
-  mail: "mailto:harishbaskar94@gmail.com",
-  githuburl: "https://github.com/HarishBaskar",
-  linkedinurl: "https://www.linkedin.com/in/harish-baskar-96589a80",
-};
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import * as ROUTES from "../Constants/Routes";
+import Projects from "../Pages/Projects";
+import About from "../Pages/About";
+import Navigation from "../Components/Resume/Navigation/index";
 
 class App extends Component {
-  state = {
-    personalInfo,
-  };
-
   render() {
     return (
       <Router>
-        <div>
-          <Resume personalInfo={this.state.personalInfo} />
+        <Navigation />
+        <div className="wallpaper"></div>
+        <div className="content">
+          <Route path={ROUTES.HOME_PAGE} component={Resume} />
         </div>
+        <Route exact path={ROUTES.PROJECTS_PAGE} component={Projects} />
+        <Route path={ROUTES.ABOUT_PAGE} component={About} />
       </Router>
     );
   }
