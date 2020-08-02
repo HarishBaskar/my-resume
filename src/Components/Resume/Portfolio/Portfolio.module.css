@@ -1,9 +1,8 @@
 .portfolio {
   background-color: transparent;
   color: #555;
-  font-family: "Helvetica", "Arial", sans-serif;
   height: auto;
-  margin: 0 auto !important;
+  margin: 0 auto;
   max-width: 50rem;
 }
 
@@ -12,7 +11,9 @@
   font-weight: bolder;
   color: #333;
   letter-spacing: 0.4rem;
-  margin: 2rem auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vh;
   text-align: center;
 }
 
@@ -21,29 +22,11 @@
   font-weight: bold;
   letter-spacing: 0.2rem;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin: 4vh 4vw;
 }
 
 @media screen and (max-width: 799px) {
   .portfolio {
     max-width: 50em;
-  }
-
-  .portfolio h1 {
-    font-size: 1.2rem;
-    font-weight: bolder;
-    color: #333;
-    letter-spacing: 0.4rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .portfolio p {
-    font-size: 0.7rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    line-height: 1.5;
   }
 }

@@ -18,12 +18,7 @@
 .content {
   display: flex;
   position: relative;
-  min-height: 85vh !important;
-}
-
-.navigation {
-  display: flex;
-  position: relative;
+  min-height: 86vh;
 }
 
 .downarrow {
