@@ -16,7 +16,8 @@ const Testimonials = () => {
             />
           </div>
           <div className={Styles.container}>
-            <h2>Colleague 1</h2>
+            <h2>Deepa Nanabala</h2>
+            <h3>Software Engineer, Thomson Reuters</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -35,6 +36,7 @@ const Testimonials = () => {
           </div>
           <div className={Styles.container}>
             <h2>Colleague 2</h2>
+            <h3>Software Engineer, Thomson Reuters</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -53,6 +55,7 @@ const Testimonials = () => {
           </div>
           <div className={Styles.container}>
             <h2>Colleague 3</h2>
+            <h3>Software Engineer, Thomson Reuters</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -73,6 +76,7 @@ const Testimonials = () => {
           </div>
           <div className={Styles.container}>
             <h2>Colleague 4</h2>
+            <h3>Software Engineer, Thomson Reuters</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
