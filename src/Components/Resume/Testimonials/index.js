@@ -5,7 +5,7 @@ import ColleaguePic from "../../../Images/samplepic.png";
 const Testimonials = () => {
   return (
     <div className={Styles.topcontainer}>
-      <h1>What do my Colleagues say</h1>
+      <h1>Testimonials</h1>
       <div className={Styles.testimonials}>
         <div className={Styles.card}>
           <div className={Styles.colleagueimage}>
