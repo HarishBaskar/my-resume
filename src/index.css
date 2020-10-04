@@ -82,8 +82,13 @@ html {
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   min-height: 100vh;
-  min-width: 300px;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    min-width: 410px;
+  }
 }
 
 a {

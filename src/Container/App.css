@@ -22,7 +22,7 @@
 }
 
 .content {
-  position: absolute;
+  position: relative;
   display: fixed;
   min-height: 86vh;
 }

@@ -6,7 +6,6 @@ import Styles from "./Header.module.css";
 const Header = ({ personalInfo }) => {
   return (
     <div>
-      <div className={Styles.wallpaper}></div>
       <div className={Styles.content}>
         <PrimaryImage />
         <Main personalInfo={personalInfo} />

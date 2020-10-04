@@ -3,7 +3,6 @@
   position: relative;
   z-index: 10;
   margin-left: 6vw;
-  margin-top: 2vh;
 }
 
 .navigation .menu li a {
@@ -40,10 +39,10 @@ button:hover {
   color: #ffffff !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .navigation {
     background-color: transparent;
-    height: 5vh;
+    min-height: 5vh;
   }
 
   .navigation ul {
