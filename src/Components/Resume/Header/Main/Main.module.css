@@ -3,10 +3,14 @@
   font-size: 2rem;
 }
 
+.hr {
+  width: 14.65rem;
+}
+
 @media screen and (max-width: 799px) {
   .about {
     font-size: 0.8rem !important;
-    padding: 2rem;
+    padding: 0.6rem;
   }
 
   .name {
@@ -37,6 +41,10 @@
     flex-grow: 1;
     flex-shrink: 1;
   }
+
+  .hr {
+    width: 22rem;
+  }
 }
 
 .name {
@@ -64,7 +72,6 @@
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   transform-origin: center left;
-  width: 22rem;
 }
 
 .description {

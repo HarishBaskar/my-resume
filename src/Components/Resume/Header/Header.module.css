@@ -18,7 +18,7 @@
 .content {
   display: flex;
   position: relative;
-  min-height: 86vh;
+  min-height: 83vh;
 }
 
 @media screen and (max-width: 799px) {

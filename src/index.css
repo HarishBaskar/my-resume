@@ -85,12 +85,6 @@ html {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (max-width: 375px) {
-  html {
-    min-width: 410px;
-  }
-}
-
 a {
   color: currentColor;
   cursor: pointer;

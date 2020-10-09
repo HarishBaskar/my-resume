@@ -2,11 +2,11 @@
   background-color: transparent;
   position: relative;
   z-index: 10;
-  margin-left: 6vw;
 }
 
 .navigation .menu li a {
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .navigation ul {
@@ -19,7 +19,7 @@
 
 .navigation li a {
   display: block;
-  color: white;
+  color: #ffe479;
   text-decoration: none;
   padding: 0.5rem 2rem;
 }
@@ -35,8 +35,7 @@
 /* Change the link color on hover */
 .navigation li a:hover,
 button:hover {
-  background-color: black;
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 800px) {
@@ -59,7 +58,7 @@ button:hover {
 
   .navigation li a {
     display: block;
-    color: black;
+    color: #ffe479;
     text-align: center;
     padding: 0.5rem 2rem;
     text-decoration: none;

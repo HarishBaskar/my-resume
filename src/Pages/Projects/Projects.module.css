@@ -1,15 +1,89 @@
-.projectscontainer p {
-  width: 100%;
-  font-size: 8rem;
-  margin: 8rem auto;
-  text-align: center;
-  padding: 0 4rem;
+.topcontainer {
+  background-color: transparent;
+  position: relative;
+  margin-top: 4vh;
 }
 
-@media only screen and (max-width: 799px) {
-  .projectscontainer p {
-    font-size: 2rem;
-    margin: 8rem auto;
-    text-align: center;
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  letter-spacing: 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  background: rgb(255, 250, 230, 0.8);
+  font-size: 2rem;
+  max-width: 100vw;
+  margin: 1rem;
+  padding: 1.2rem 1.4rem;
+  transition: 0.25s;
+  border-left: 0.3rem solid #ffd633;
+}
+
+.card img {
+  max-height: 7rem;
+  max-width: 7rem;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 10px 5px 0 rgba(219, 82, 82, 0.2);
+}
+
+.topcontainer h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #ffe479;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vh;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #555;
+  letter-spacing: 0.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.projects p {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+}
+
+.projects h3 {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.projects p {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+b {
+  color: #333;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 358px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

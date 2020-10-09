@@ -1,24 +1,23 @@
 import React from "react";
 import Styles from "./AboutMe.module.css";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const AboutMe = () => {
   return (
     <div className={Styles.aboutme}>
-      <ScrollAnimation animateIn="fadeIn">
-        <h1>About me</h1>
+      <h1>About me</h1>
+      <p>
+        I am a Front-end developer with 4.5+ years of experience in App
+        development, Maintenance, testing and implementation of front-end apps.
+        Initially, I started my career as a C# developer. Fascinated by
+        front-end tech, I taught myself some cool front-end techs and have been
+        enjoying the world of front-end development so far.
+      </p>
+      <div>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          In my spare time, I love to spend time with dogs and am very much
+          interested in Aqua scaping. Scroll down to learn more about me :)
         </p>
-      </ScrollAnimation>
+      </div>
     </div>
   );
 };
