@@ -28,8 +28,8 @@ const Vita = () => {
               <div className={Styles.highlightscontainer}>
                 <strong>Highlights:</strong>
                 <ul>
-                    <li>Developed single page applications for college events</li>
-                    <li>ECE Department topper(4th)</li>
+                    <li>Developed Web applications for college events</li>
+                    <li>ECE Department topper(4th place - out of 230 students)</li>
                     <li>CGPA: 9.17</li>
                 </ul>
               </div>
@@ -83,8 +83,8 @@ const Vita = () => {
             </h1>
             <p>
               <ul className={Styles.descriptioncontainer}>
-                <li>After I got promoted, I was given an additional responsibility of mentoring my Juniors.</li>
-                <li>Also, I was involved in design and development of Web apps using React JS.</li>
+                <li>Mentored my Juniors and helped them to implement front-end modules.</li>
+                <li>Involved myself in design and development of Web apps using React JS.</li>
               </ul>
               <div className={Styles.highlightscontainer}>
                 <strong>Technologies used:</strong>

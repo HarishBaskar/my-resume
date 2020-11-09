@@ -5,10 +5,6 @@ import NewsPic from "../../../Images/news.jpg";
 import DatabasePic from "../../../Images/database.jpg";
 import OnboardingPic from "../../../Images/onboarding.jpg"
 
-import { Link } from "react-router-dom";
-import * as ROUTES from "../../../Constants/Routes";
-
-
 const Projects = () => {
   const projects = [
     {
@@ -50,7 +46,20 @@ const Projects = () => {
         <div className={Styles.container}>
           <h2>{project.projectname}</h2>
           <p>{project.description}
-             <Link className={Styles.link} to={ROUTES.PROJECTS_PAGE} title="Learn more">Learn more</Link>
+            {(() => {
+            switch (project.projectname) {
+              case 'Onboarding tool':
+                return <a href="/projects#onboarding" title="Learn more">Learn more</a>;
+              case 'News filing app':
+                return <a href="/projects#news" title="Learn more">Learn more</a>;
+              case 'Database tool':
+                return <a href="/projects#database" title="Learn more">Learn more</a>;
+              case 'YouThere app':
+                return <a href="/projects#youthere" title="Learn more">Learn more</a>;
+              default:
+                return null;
+            }
+          })()}
           </p>
         </div>
       </div>

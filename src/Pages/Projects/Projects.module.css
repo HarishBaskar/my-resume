@@ -49,16 +49,21 @@
   font-size: 1.5rem;
   font-weight: bolder;
   color: #555;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.25rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2vh;
   text-align: center;
 }
 
-.projects p,
-ul,
-li {
+.projects li {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+}
+
+.projects p {
   color: #555;
   margin-bottom: 1rem;
   font-size: 1rem;
