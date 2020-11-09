@@ -13,9 +13,6 @@ const Navigation = () => {
         <li className={styles.item}>
           <Link to={ROUTES.PROJECTS_PAGE}>Projects</Link>
         </li>
-        <li className={styles.item}>
-          <Link to={ROUTES.ABOUT_PAGE}>About</Link>
-        </li>
       </ul>
     </nav>
   );

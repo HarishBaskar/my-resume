@@ -40,6 +40,7 @@
   margin: 6px auto;
   color: #333;
   font-size: 1rem;
+  text-decoration: underline;
 }
 
 .timeline p {
@@ -103,7 +104,7 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: transparent;
+  background-image: linear-gradient(to left, #ccffff, #e6ffff);
   position: relative;
   border-radius: 6px;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
@@ -111,6 +112,24 @@
 
 .content:hover {
   transform: scale(1.02) translateY(-4px);
+}
+
+.highlightscontainer {
+  margin-top: 1em;
+}
+
+.highlightscontainer strong {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.descriptioncontainer li {
+  list-style-type: square;
+}
+
+.highlightscontainer ul {
+  list-style-type: square;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -141,6 +160,10 @@
   .timeline p {
     font-weight: bold;
     font-size: 0.7rem;
+  }
+
+  .highlightscontainer strong {
+    font-size: 0.8rem;
   }
 
   .header {

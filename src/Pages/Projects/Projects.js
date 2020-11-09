@@ -1,36 +1,67 @@
 import React from "react";
 import Styles from "./Projects.module.css";
 
+const OnboardingDesc = () => {
+  return (
+    <div className={Styles.container}>
+      <ul>
+          <li>A web application developed to onboard new users and assign training according to their department.</li>
+          <li>Developed using <strong>JavaScript, React JS, and C#</strong>.</li>
+          <li>Used <strong>Entity Framework</strong> to establish mapping with SQL Server Database.</li>
+          <li>Worked on the modules for implementing the Front-end logic using React JS.</li>
+          <li>The application deals with on-boarding and off-boarding users.</li>
+          <li>Users will be assigned with roles based on business requirement. </li>
+          <li>The project was developed as per the inputs given by the Client and the web application was successfully deployed in production environment.</li>
+          <li>The web application served its purpose by replacing a third-party application, eventually saving <strong>$3000</strong> per year.</li>
+      </ul>
+    </div>
+  )
+}
+
+const YouTHereDesc = () => {
+  return (
+    <div className={Styles.container}>
+      <ul>
+        <li>A web app developed for a NGO organization to send and get donations for people in need.</li>
+        <li>Developed User Interface using <strong>React JS</strong>.</li>
+        <li>Developed <strong>RESTFUL Web API</strong> for front end consumption using <strong>ASP.NET Web API.</strong></li>
+        <li>Development of Database, Tables and other DB components.</li>
+        <li>Integrated DB with Back end code using <strong>EF 6 Code First</strong> approach.</li>
+        <li>Authentication and Authorization was implemented using <strong>Firebase.</strong></li>
+        <li>Usage of <strong>GITHUB</strong> as source control and version management.</li>
+        <li>Business logic implementation using <strong>C#</strong> and <strong>LINQ</strong> for DB changes.</li> 
+        <li>Incorporated <strong>Swagger UI</strong> to reduce implementation logic and to visualize, interact with the API resources.</li>
+      </ul>
+    </div>
+  )
+}
+
 const Projects = () => {
   const projects = [
     {
       projectname: "Onboarding Tool",
       modelused: "Agile model",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      desctype: "onboarding",
       roles:
         "Played a prominent role in the team and also involved myself right from design phase till implementation.",
     },
     {
       projectname: "News filing app",
       modelused: "Agile model",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      desctype: "news",
       roles: "Lorem Ipsum is simply dummy",
     },
     {
       projectname: "Database tool",
       modelused: "Agile model",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      desctype: "database",
       roles: "Lorem Ipsum is simply dummy",
     },
     {
-      projectname: "Portfolio website",
+      projectname: "YouThere",
       modelused: "Agile model",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      roles: "Lorem Ipsum is simply dummy",
+      desctype: "youthere",
+      roles: "Developed multiple Front-end modules and complete back end API and DB development. Active Involvement right from design phase till implementation. ",
     },
   ];
 
@@ -40,7 +71,20 @@ const Projects = () => {
         <div className={Styles.container}>
           <h2>{project.projectname}</h2>
           <h3>Description:</h3>
-          <p>{project.description}</p>
+          {(() => {
+            switch (project.desctype) {
+              case 'onboarding':
+                return <OnboardingDesc/>;
+              case 'news':
+                return <OnboardingDesc/>;
+              case 'database':
+                return <OnboardingDesc/>;
+              case 'youthere':
+                return <YouTHereDesc/>;
+              default:
+                return null;
+            }
+          })()}
           <h3>Model used:</h3>
           <p>{project.modelused}</p>
           <h3>Roles and responsibilities:</h3>
