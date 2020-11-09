@@ -3,9 +3,14 @@
   font-size: 2rem;
 }
 
+.hr {
+  width: 14.65rem;
+}
+
 @media screen and (max-width: 799px) {
   .about {
     font-size: 0.8rem !important;
+    padding: 0.6rem;
   }
 
   .name {
@@ -36,6 +41,10 @@
     flex-grow: 1;
     flex-shrink: 1;
   }
+
+  .hr {
+    width: 22rem;
+  }
 }
 
 .name {
@@ -46,7 +55,6 @@
 
 .job,
 .button {
-  font-family: "Montserrat", "Quicksand", sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -64,7 +72,6 @@
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   transform-origin: center left;
-  width: 22rem;
 }
 
 .description {
@@ -114,15 +121,18 @@
   margin-right: 1.5rem;
   text-align: center;
   width: 2rem;
+  padding-left: 0;
 }
 
 .social a {
+  color: white;
   align-items: center;
   display: flex;
   font-size: 2.25rem;
   height: 2rem;
   justify-content: center;
   width: 2rem;
+  padding-left: 0;
 }
 
 .social a:hover {

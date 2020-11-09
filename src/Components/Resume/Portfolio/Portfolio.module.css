@@ -1,32 +1,84 @@
-.portfolio {
+.topcontainer {
   background-color: transparent;
-  color: #555;
-  height: auto;
-  margin: 0 auto;
-  max-width: 50rem;
+  position: relative;
+  margin-top: 4vh;
 }
 
-.portfolio h1 {
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  background-image: linear-gradient(to top, #ccffff, #e6ffff);
+  border-radius: 3%;
+  color: #555;
+  font-size: 2rem;
+  max-width: 100vw;
+  margin: 1rem;
+  padding: 1.2rem 1.4rem;
+  transition: 0.25s;
+}
+
+.card img {
+  height: 10rem;
+  max-width: auto;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topcontainer h1 {
   font-size: 1.5rem;
   font-weight: bolder;
   color: #333;
   letter-spacing: 0.4rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4vh;
+  margin: 2vh auto;
   text-align: center;
 }
 
-.portfolio p {
+.projects h2 {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.projects h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.projects p {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  line-height: 1.5;
-  margin: 4vh 4vw;
 }
 
-@media screen and (max-width: 799px) {
-  .portfolio {
-    max-width: 50em;
+.container a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1299px) {
+  .projects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
