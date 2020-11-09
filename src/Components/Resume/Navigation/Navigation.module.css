@@ -1,0 +1,87 @@
+.navigation {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.navigation .menu li a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: transparent;
+}
+
+.navigation li a {
+  display: block;
+  color: #ffe479;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+}
+
+.navigation li button {
+  background-color: transparent;
+  border: transparent;
+  margin: 16px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Change the link color on hover */
+.navigation li a:hover,
+button:hover {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .navigation {
+    background-color: transparent;
+    min-height: 5vh;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  .navigation li {
+    float: right;
+  }
+
+  .navigation li a {
+    display: block;
+    color: #ffe479;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 150%;
+  }
+
+  .heading {
+    float: left !important;
+    font-size: 1.5rem;
+  }
+
+  .navigation li button {
+    background-color: transparent;
+    border: transparent;
+    margin: 16px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Change the link color on hover */
+  .navigation li a:hover,
+  button:hover {
+    background-color: black;
+    color: #ffffff !important;
+  }
+}

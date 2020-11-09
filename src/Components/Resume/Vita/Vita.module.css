@@ -1,0 +1,205 @@
+.vita {
+  background-color: transparent;
+  color: #555;
+  min-height: auto;
+  position: relative;
+  font-size: 1em;
+  padding: 4rem 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.5em;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #333;
+  letter-spacing: 0.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.timeline h2 {
+  font-size: 1.2rem;
+  margin: 6px auto;
+}
+
+.timeline h1 {
+  font-weight: bolder;
+  margin: 6px auto;
+  color: #333;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.timeline p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.header {
+  left: 50%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #333;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 30px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #ffeeee;
+  border: 4px solid #555;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-image: linear-gradient(to left, #ccffff, #e6ffff);
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.content:hover {
+  transform: scale(1.02) translateY(-4px);
+}
+
+.highlightscontainer {
+  margin-top: 1em;
+}
+
+.highlightscontainer strong {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.descriptioncontainer li {
+  list-style-type: square;
+}
+
+.highlightscontainer ul {
+  list-style-type: square;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 799px) {
+  .timeline {
+    font-size: 0.5rem;
+  }
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline h2 {
+    font-size: 1rem;
+    margin: 6px auto;
+  }
+
+  .timeline h1 {
+    font-weight: bolder;
+    margin: 6px auto;
+    color: #333;
+    font-size: 0.8rem;
+  }
+
+  .timeline li {
+    font-size: 0.8rem;
+  }
+
+  .timeline p {
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .highlightscontainer strong {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #333;
+    letter-spacing: 0.4rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 1.5px;
+  }
+}
