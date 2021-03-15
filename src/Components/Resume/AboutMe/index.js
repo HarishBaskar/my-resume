@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className={Styles.aboutme}>
       <h1>About me</h1>
       <p>
-        I am a Front-end developer with 4.5+ years of experience in App
+        I am a Front-end developer with 5 years of experience in App
         development, Maintenance, testing and implementation of front-end apps.
         Initially, I started my career as a C# developer. Fascinated by
         front-end tech, I taught myself some cool front-end techs and have been

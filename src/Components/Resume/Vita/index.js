@@ -39,7 +39,7 @@ const Vita = () => {
         <div className={cx(Styles.container, Styles.right)}>
           <div className={Styles.content}>
             <h2>
-              <strong>2017 - 2018</strong>
+              <strong>2016 - 2018</strong>
             </h2>
             <h2>
               <strong>Software Engineer</strong>
@@ -102,7 +102,7 @@ const Vita = () => {
         <div className={cx(Styles.container, Styles.right)}>
           <div className={Styles.content}>
             <h2>
-              <strong>2019 - Present</strong>
+              <strong>2019 - 2020</strong>
             </h2>
             <h2>
               <strong>Software Engineer</strong>
@@ -115,7 +115,7 @@ const Vita = () => {
             <p>
               <ul className={Styles.descriptioncontainer}>
                 <li>Here at TR, I expertised in front-end framework React JS.</li>
-                <li>Also I got an opportunity to work and gain experience with cloud technology (AWS).</li>
+                <li>Also I got an opportunity to work and gain experience in cloud technology (AWS).</li>
                 <li>I have pretty good experience with Agile development and been playing a prominent role in 
                 design and development of scalable web applications being used by 'X' number of clients(millions per second).</li>
                 <li>Mentoring my juniors and leading the team.</li>
@@ -123,12 +123,45 @@ const Vita = () => {
              <div className={Styles.highlightscontainer}>
                 <strong>Technologies used:</strong>
                 <ul>
-                    <li>Javascript, SQL, React JS and C#</li>
+                    <li>React.js, Redux, Javascript, HTML, CSS</li>
                 </ul>
                 <strong>Domain:</strong>
                 <ul>
-                      <li>News Technology</li>
-                  </ul>
+                  <li>News Technology</li>
+                </ul>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div className={cx(Styles.container, Styles.left)}>
+          <div className={Styles.content}>
+            <h2>
+              <strong>2021 - Present</strong>
+            </h2>
+            <h2>
+              <strong>Senior Software Engineer</strong>
+            </h2>
+            <h1>
+              <a href="https://www.thomsonreuters.com/en/about-us.html" target="_blank" title="Thomson Reuters" rel="noopener noreferrer">
+                Thomson Reuters, Bangalore
+              </a>
+            </h1>
+            <p>
+              <ul className={Styles.descriptioncontainer}>
+                <li>Participate in project planning sessions with team members to analyze development requirements, provide work breakdown and estimates of work</li>
+                <li>Enhance and maintain News Tech application and deliver global release candidates with no compromise in quality.</li>
+                <li>Communicate with News Tech users to exchange information, understand requirements and solve problems.</li>
+                <li>Mentoring my juniors and leading the team.</li>
+              </ul>
+             <div className={Styles.highlightscontainer}>
+                <strong>Technologies used:</strong>
+                <ul>
+                    <li>React.js, Redux, Javascript, HTML, CSS, Git, Datadog, JIRA</li>
+                </ul>
+                <strong>Domain:</strong>
+                <ul>
+                  <li>News Technology</li>
+                </ul>
               </div>
             </p>
           </div>
