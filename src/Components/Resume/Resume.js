@@ -6,6 +6,7 @@ import Vita from "./Vita/index";
 import { Parallax } from "react-parallax";
 import Wallpaper1 from "../../Images/wallpaper1.jpg";
 import Styles from "./Resume.module.css";
+import Footer from "./Footer/index";
 
 const personalInfo = {
   name: "Harish Baskar",
@@ -64,6 +65,19 @@ const resume = () => {
         </Parallax>
         <div className={Styles.whitesection}>
           <Portfolio />
+        </div>
+        <Parallax
+          bgImage={Wallpaper1}
+          strength={400}
+          className={Styles.parallaxcontainer}
+          renderLayer={(percentage) => transformElement(percentage)}
+        >
+          <div style={{ height: 800 }}>
+            <div className={Styles.insidestyles}></div>
+          </div>
+        </Parallax>
+        <div className={Styles.whitesection}>
+          <Footer />
         </div>
       </div>
     </div>

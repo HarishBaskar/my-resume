@@ -14,7 +14,7 @@
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 110em;
   margin: 0 auto;
   font-size: 0.5em;
 }
@@ -38,7 +38,6 @@
 .timeline h1 {
   font-weight: bolder;
   margin: 6px auto;
-  color: #333;
   font-size: 1rem;
   text-decoration: underline;
 }
@@ -101,27 +100,27 @@
   left: -12px;
 }
 
+.highlightscontainer strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 /* The actual content */
-.content {
+.vitacontent {
   padding: 20px 30px;
-  background-image: linear-gradient(to left, #ccffff, #e6ffff);
   position: relative;
-  border-radius: 6px;
+  border: 2px solid #555;
+  border-radius: 0.5em;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
-.content:hover {
-  transform: scale(1.02) translateY(-4px);
+.vitacontent:hover {
+  background: #555;
+  color: white;
 }
 
 .highlightscontainer {
   margin-top: 1em;
-}
-
-.highlightscontainer strong {
-  color: #333;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .descriptioncontainer li {
@@ -150,7 +149,6 @@
   .timeline h1 {
     font-weight: bolder;
     margin: 6px auto;
-    color: #333;
     font-size: 0.8rem;
   }
 
