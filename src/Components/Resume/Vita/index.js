@@ -25,7 +25,7 @@ const Vita = () => {
                 Sri Krishna College of Engineering and Technology, Coimbatore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
                 <li>
                   I graduated with Bachelor of Engineering degree in Electronics
@@ -42,7 +42,7 @@ const Vita = () => {
                   <li>CGPA: 9.17</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
         <div className={cx(Styles.container, Styles.right)}>
@@ -63,7 +63,7 @@ const Vita = () => {
                 Infosys, Bangalore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
                 <li>
                   I started as a software engineer in bangalore and developed
@@ -84,7 +84,7 @@ const Vita = () => {
                   <li>Health care</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
         <div className={cx(Styles.container, Styles.left)}>
@@ -105,7 +105,7 @@ const Vita = () => {
                 Infosys, Bangalore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
                 <li>
                   Mentored my Juniors and helped them to implement front-end
@@ -126,7 +126,7 @@ const Vita = () => {
                   <li>Health care</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
         <div className={cx(Styles.container, Styles.right)}>
@@ -147,7 +147,7 @@ const Vita = () => {
                 Thomson Reuters, Bangalore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
                 <li>
                   Here at TR, I expertised in front-end framework React JS.
@@ -174,7 +174,7 @@ const Vita = () => {
                   <li>News Technology</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
         <div className={cx(Styles.container, Styles.left)}>
@@ -195,7 +195,7 @@ const Vita = () => {
                 Thomson Reuters, Bangalore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
                 <li>
                   Participate in project planning sessions with team members to
@@ -224,7 +224,7 @@ const Vita = () => {
                   <li>News Technology</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
       </div>

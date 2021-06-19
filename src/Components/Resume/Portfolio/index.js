@@ -3,7 +3,7 @@ import Styles from "./Portfolio.module.css";
 import ProjectPic from "../../../Images/coffee.jpg";
 import NewsPic from "../../../Images/news.jpg";
 import DatabasePic from "../../../Images/database.jpg";
-import OnboardingPic from "../../../Images/onboarding.jpg"
+import OnboardingPic from "../../../Images/onboarding.jpg";
 
 const Projects = () => {
   const projects = [
@@ -39,27 +39,44 @@ const Projects = () => {
 
   const colleagues = projects.map((project, index) => {
     return (
-      <div className={Styles.card}>
+      <div className={Styles.card} key={`Project-${project.projectname}`}>
         <div className={Styles.colleagueimage}>
           <img id="pictureImage" src={project.picture} alt="Portrait" />
         </div>
         <div className={Styles.container}>
           <h2>{project.projectname}</h2>
-          <p>{project.description}
+          <p>
+            {project.description}
             {(() => {
-            switch (project.projectname) {
-              case 'Onboarding tool':
-                return <a href="/projects#onboarding" title="Learn more">Learn more</a>;
-              case 'News filing app':
-                return <a href="/projects#news" title="Learn more">Learn more</a>;
-              case 'Database tool':
-                return <a href="/projects#database" title="Learn more">Learn more</a>;
-              case 'YouThere app':
-                return <a href="/projects#youthere" title="Learn more">Learn more</a>;
-              default:
-                return null;
-            }
-          })()}
+              switch (project.projectname) {
+                case "Onboarding tool":
+                  return (
+                    <a href="/projects#onboarding" title="Learn more">
+                      Learn more
+                    </a>
+                  );
+                case "News filing app":
+                  return (
+                    <a href="/projects#news" title="Learn more">
+                      Learn more
+                    </a>
+                  );
+                case "Database tool":
+                  return (
+                    <a href="/projects#database" title="Learn more">
+                      Learn more
+                    </a>
+                  );
+                case "YouThere app":
+                  return (
+                    <a href="/projects#youthere" title="Learn more">
+                      Learn more
+                    </a>
+                  );
+                default:
+                  return null;
+              }
+            })()}
           </p>
         </div>
       </div>
