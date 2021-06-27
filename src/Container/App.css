@@ -13,11 +13,11 @@
 }
 
 .wallpaper {
-  background-image: url("../Images/timelapse.jpg");
+  background-image: url("../Images/background.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.4;
+  opacity: 0.7;
   position: fixed;
 }
 

@@ -1,7 +1,9 @@
 .topcontainer {
   background-color: transparent;
   position: relative;
+  margin: 0 auto;
   margin-top: 4vh;
+  max-width: 60em;
 }
 
 .projects {
@@ -19,8 +21,8 @@
   background: rgb(255, 250, 230, 0.9);
   font-size: 2rem;
   max-width: 100vw;
-  margin: 1rem;
-  padding: 1.2rem 1.4rem;
+  margin: 2rem;
+  padding: 1.4rem 1.4rem;
   transition: 0.25s;
   border-left: 0.3rem solid #ffd633;
 }

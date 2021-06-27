@@ -1,6 +1,34 @@
 .footer {
-  background-color: #ffeeee;
+  background-color: transparent;
   color: black;
-  width: 100%;
-  height: 100%;
+  height: 12rem;
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
+
+.footerbutton {
+  background-color: transparent;
+  font-size: 1rem;
+  border: 2px solid black;
+  padding: 0.7rem;
+  margin: 0 auto;
+}
+
+.footerbuttoncontainer {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.footerbutton:hover {
+  background-color: #555;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid #555;
+  padding: 0.7rem;
+  margin: 0 auto;
 }
