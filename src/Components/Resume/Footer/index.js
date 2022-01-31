@@ -9,7 +9,18 @@ const Footer = () => {
         looking for Developer role in that area.
       </p>
       <div className={Styles.footerbuttoncontainer}>
-        <button className={Styles.footerbutton}>View my resume &rarr;</button>
+        <button
+          className={Styles.footerbutton}
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              "https://drive.google.com/file/d/1RFoaLlwqseoQuSPLXLrr444C1OFKUAiW/view?usp=sharing",
+              "_blank"
+            );
+          }}
+        >
+          View my resume &rarr;
+        </button>
       </div>
     </div>
   );

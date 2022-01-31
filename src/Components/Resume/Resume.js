@@ -11,7 +11,7 @@ import Footer from "./Footer/index";
 const personalInfo = {
   name: "Harish Baskar",
   job: "Front-end Developer",
-  skills: "React, Javascript, REST Api",
+  skills: "React.js, Redux, Javascript and Typescript",
   mail: "mailto:harishbaskar94@gmail.com",
   githuburl: "https://github.com/HarishBaskar",
   linkedinurl: "https://www.linkedin.com/in/harish-baskar-96589a80",

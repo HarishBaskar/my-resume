@@ -48,10 +48,10 @@ const Vita = () => {
         <div className={cx(Styles.container, Styles.right)}>
           <div className={Styles.vitacontent}>
             <h2>
-              <strong>2016 - 2018</strong>
+              <strong>2016 - 2019</strong>
             </h2>
             <h2>
-              <strong>Software Engineer</strong>
+              <strong>Senior Software Engineer</strong>
             </h2>
             <h1>
               <a
@@ -70,56 +70,18 @@ const Vita = () => {
                   end to end scalable web applications for health care systems.
                 </li>
                 <li>
-                  Over the course of time, I gained expertise in front end
-                  development - HTML/CSS and Javascript and C# on backend.
-                </li>
-              </ul>
-              <div className={Styles.highlightscontainer}>
-                <strong>Technologies used:</strong>
-                <ul>
-                  <li>Javascript, HTML, CSS and C#</li>
-                </ul>
-                <strong>Domain:</strong>
-                <ul>
-                  <li>Health care</li>
-                </ul>
-              </div>
-            </React.Fragment>
-          </div>
-        </div>
-        <div className={cx(Styles.container, Styles.left)}>
-          <div className={Styles.vitacontent}>
-            <h2>
-              <strong>2018 - 2019</strong>
-            </h2>
-            <h2>
-              <strong>Senior Software Engineer</strong>
-            </h2>
-            <h1>
-              <a
-                href="https://www.infosys.com/about.html"
-                target="_blank"
-                title="Infosys"
-                rel="noopener noreferrer"
-              >
-                Infosys, Bangalore
-              </a>
-            </h1>
-            <React.Fragment>
-              <ul className={Styles.descriptioncontainer}>
-                <li>
                   Mentored my Juniors and helped them to implement front-end
                   modules.
                 </li>
                 <li>
                   Involved myself in design and development of Web apps using
-                  React JS.
+                  React JS, Redux.
                 </li>
               </ul>
               <div className={Styles.highlightscontainer}>
                 <strong>Technologies used:</strong>
                 <ul>
-                  <li>Javascript, C# and Sharepoint 2013</li>
+                  <li>Javascript, React.js, Redux, HTML and CSS</li>
                 </ul>
                 <strong>Domain:</strong>
                 <ul>
@@ -129,58 +91,10 @@ const Vita = () => {
             </React.Fragment>
           </div>
         </div>
-        <div className={cx(Styles.container, Styles.right)}>
-          <div className={Styles.vitacontent}>
-            <h2>
-              <strong>2019 - 2020</strong>
-            </h2>
-            <h2>
-              <strong>Software Engineer</strong>
-            </h2>
-            <h1>
-              <a
-                href="https://www.thomsonreuters.com/en/about-us.html"
-                target="_blank"
-                title="Thomson Reuters"
-                rel="noopener noreferrer"
-              >
-                Thomson Reuters, Bangalore
-              </a>
-            </h1>
-            <React.Fragment>
-              <ul className={Styles.descriptioncontainer}>
-                <li>
-                  Here at TR, I expertised in front-end framework React JS.
-                </li>
-                <li>
-                  Also I got an opportunity to work and gain experience in cloud
-                  technology (AWS).
-                </li>
-                <li>
-                  I have pretty good experience with Agile development and been
-                  playing a prominent role in design and development of scalable
-                  web applications being used by 'X' number of clients(millions
-                  per second).
-                </li>
-                <li>Mentoring my juniors and leading the team.</li>
-              </ul>
-              <div className={Styles.highlightscontainer}>
-                <strong>Technologies used:</strong>
-                <ul>
-                  <li>React.js, Redux, Javascript, HTML, CSS</li>
-                </ul>
-                <strong>Domain:</strong>
-                <ul>
-                  <li>News Technology</li>
-                </ul>
-              </div>
-            </React.Fragment>
-          </div>
-        </div>
         <div className={cx(Styles.container, Styles.left)}>
           <div className={Styles.vitacontent}>
             <h2>
-              <strong>2021 - Present</strong>
+              <strong>2019 - 2021</strong>
             </h2>
             <h2>
               <strong>Senior Software Engineer</strong>
@@ -197,6 +111,9 @@ const Vita = () => {
             </h1>
             <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
+                <li>
+                  Here at TR, I expertised in front-end framework React.js.
+                </li>
                 <li>
                   Participate in project planning sessions with team members to
                   analyze development requirements, provide work breakdown and
@@ -222,6 +139,60 @@ const Vita = () => {
                 <strong>Domain:</strong>
                 <ul>
                   <li>News Technology</li>
+                </ul>
+              </div>
+            </React.Fragment>
+          </div>
+        </div>
+        <div className={cx(Styles.container, Styles.right)}>
+          <div className={Styles.vitacontent}>
+            <h2>
+              <strong>2021 - Present</strong>
+            </h2>
+            <h2>
+              <strong>Senior Software Developer</strong>
+            </h2>
+            <h1>
+              <a
+                href="https://www.iqvia.com/"
+                target="_blank"
+                title="IQVIA"
+                rel="noopener noreferrer"
+              >
+                IQVIA, Bangalore
+              </a>
+            </h1>
+            <React.Fragment>
+              <ul className={Styles.descriptioncontainer}>
+                <li>Built web application for Clinical Data analysts.</li>
+                <li>
+                  Developed transaction-based model using React.js(v17), Redux
+                  and Typescript.
+                </li>
+                <li>
+                  Created enhanced login experience and online/offline
+                  experience.
+                </li>
+                <li>
+                  Handled team of 6 members and played a prominent role in
+                  requirement planning.
+                </li>
+                <li>
+                  Extensively used <strong>React testing library</strong> and
+                  <strong> Jest</strong> to achieve code coverage more than 85%.
+                </li>
+              </ul>
+              <div className={Styles.highlightscontainer}>
+                <strong>Technologies used:</strong>
+                <ul>
+                  <li>
+                    React.js, Redux, Javascript, Typescript, RTL, Jest and
+                    SonarQube
+                  </li>
+                </ul>
+                <strong>Domain:</strong>
+                <ul>
+                  <li>Health Care</li>
                 </ul>
               </div>
             </React.Fragment>

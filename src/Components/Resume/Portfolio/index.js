@@ -8,18 +8,18 @@ import OnboardingPic from "../../../Images/onboarding.jpg";
 const Projects = () => {
   const projects = [
     {
-      projectname: "Onboarding tool",
-      link: "/projects",
-      picture: OnboardingPic,
-      description:
-        "A web application developed to onboard new users and assign training according to depart....",
-    },
-    {
       projectname: "News filing app",
       link: "/projects",
       picture: NewsPic,
       description:
         "A web app developed for News Editors to file news and publish content on the fly....",
+    },
+    {
+      projectname: "Onboarding tool",
+      link: "/projects",
+      picture: OnboardingPic,
+      description:
+        "A web application developed to onboard new users and assign training according to depart....",
     },
     {
       projectname: "Database tool",

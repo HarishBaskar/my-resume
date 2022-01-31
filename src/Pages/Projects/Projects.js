@@ -47,10 +47,12 @@ const NewsDesc = () => {
           on the fly.
         </li>
         <li>
-          Developed multiple modules using <strong>React JS</strong>.
+          Developed multiple modules using{" "}
+          <strong>React JS, Redux and Typescript</strong>.
         </li>
+        <li>The app supports both online and offline experience.</li>
         <li>
-          Authentication and Authorization was implemented using home grown
+          Authentication and Authorization was implemented using home grown API
           methods.
         </li>
         <li>
@@ -62,8 +64,9 @@ const NewsDesc = () => {
           <strong>S3 bucket</strong> and <strong>Cache behaviors</strong>.
         </li>
         <li>
-          Implemented backend service using home grown Web API hosted in AWS EC2
-          servers
+          Used combination of <strong>React Testing library</strong> and{" "}
+          <strong>Jest </strong>
+          for unit testing and worked with team to achieve code coverage of 90%.
         </li>
         <li>
           The Web app is actively used by more than 400 users and provides
@@ -80,7 +83,10 @@ const DatabaseDesc = () => {
       <ul>
         <li>A web app developed to add new 'News' items/entities to DB.</li>
         <li>This action is restricted to Admins only.</li>
-        <li>The user interface was developed using React JS.</li>
+        <li>
+          The user interface was developed using{" "}
+          <strong>React JS, Redux and Typescript</strong>.
+        </li>
         <li>
           Authentication and Authorization was implemented using Token based
           method.
@@ -112,7 +118,8 @@ const YouTHereDesc = () => {
           for people in need.
         </li>
         <li>
-          Developed User Interface using <strong>React JS</strong>.
+          Developed User Interface using{" "}
+          <strong>React JS and Javascript</strong>.
         </li>
         <li>
           Developed <strong>RESTFUL Web API</strong> for front end consumption
@@ -147,18 +154,18 @@ const YouTHereDesc = () => {
 const Projects = () => {
   const projects = [
     {
-      projectname: "Onboarding Tool",
-      modelused: "Agile model",
-      desctype: "onboarding",
-      roles:
-        "Played a prominent role in the team and also involved myself right from design phase till implementation.",
-    },
-    {
       projectname: "News filing app",
       modelused: "Agile model",
       desctype: "news",
       roles:
         "Proposed and implemented features like Github Actions for deployment. Also, implemented various user modules using React JS.",
+    },
+    {
+      projectname: "Onboarding Tool",
+      modelused: "Agile model",
+      desctype: "onboarding",
+      roles:
+        "Played a prominent role in the team and also involved myself right from design phase till implementation.",
     },
     {
       projectname: "Database tool",
