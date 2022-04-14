@@ -3,9 +3,9 @@ import "./App.css";
 import Resume from "../Components/Resume/Resume";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import * as ROUTES from "../Constants/Routes";
-import Projects from "../Pages/Projects/Projects";
 import About from "../Pages/About/About";
 import Navigation from "../Components/Resume/Navigation/index";
+import Projects from "../Pages/Projects/Projects";
 
 class App extends Component {
   render() {

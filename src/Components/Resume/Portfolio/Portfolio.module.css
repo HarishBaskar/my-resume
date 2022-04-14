@@ -11,8 +11,6 @@
 }
 
 .card {
-  border: 2px solid black;
-  border-radius: 0.2em;
   color: #555;
   font-size: 2rem;
   flex-basis: 30%;
@@ -27,21 +25,10 @@
   flex-basis: 100%;
 }
 
-.card:hover {
-  background: #555;
-  border: 2px solid #555;
-  color: white;
-}
-
-.card h2:hover {
-  color: white;
-}
-
 .topcontainer h1 {
-  font-size: 1.5rem;
+  font-size: 2.625rem;
   font-weight: bolder;
   color: #333;
-  letter-spacing: 0.4rem;
   margin: 2vh auto;
   text-align: center;
 }
@@ -57,7 +44,6 @@
 
 .projects p {
   font-size: 1rem;
-  letter-spacing: 0.05rem;
 }
 
 .container a {

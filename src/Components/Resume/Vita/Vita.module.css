@@ -24,10 +24,9 @@
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 2.625rem;
   font-weight: bolder;
   color: #333;
-  letter-spacing: 0.4rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
@@ -113,14 +112,6 @@
 .vitacontent {
   padding: 20px 30px;
   position: relative;
-  border: 2px solid #555;
-  border-radius: 0.5em;
-  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
-}
-
-.vitacontent:hover {
-  background: #555;
-  color: white;
 }
 
 .highlightscontainer {
@@ -146,34 +137,33 @@
   }
 
   .timeline h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 6px auto;
   }
 
   .timeline h1 {
     font-weight: bolder;
     margin: 6px auto;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .timeline li {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .timeline p {
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
 
   .highlightscontainer strong {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .header {
     font-size: 1.5rem;
     font-weight: bolder;
     color: #333;
-    letter-spacing: 0.4rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
     text-align: left;
