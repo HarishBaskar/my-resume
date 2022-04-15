@@ -9,7 +9,7 @@ const transformElement = (percentage) => {
       <div
         style={{
           position: "absolute",
-          background: `rgba(75, 67, 219, ${percentage * 0.5})`,
+          background: `rgba(0, 138, 230, ${percentage * 0.5})`,
           transform: "scale(4, 3)",
           borderRadius: "50%",
           width: percentage * 700,

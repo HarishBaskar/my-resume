@@ -23,7 +23,7 @@
   margin: 2rem;
   padding: 1.4rem 1.4rem;
   transition: 0.25s;
-  border-left: 0.3rem solid #ffd633;
+  border-left: 0.3rem solid #0074ba;
 }
 
 .card img {
@@ -39,7 +39,7 @@
 .topcontainer h1 {
   font-size: 2.625rem;
   font-weight: bolder;
-  color: #ffe479;
+  color: #0074ba;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4vh;

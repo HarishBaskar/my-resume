@@ -13,7 +13,8 @@
 }
 
 .wallpaper {
-  background-image: url("../Images/background.jpg");
+  /* background-image: url("../Images/background.jpg"); */
+  background-color: #ffff;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

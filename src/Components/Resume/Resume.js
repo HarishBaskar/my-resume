@@ -11,7 +11,7 @@ const ParallaxElement = React.lazy(() => import("./ParallaxContainer"));
 
 const personalInfo = {
   name: "Harish Baskar",
-  job: "Front-end Developer",
+  job: "Senior Web Developer",
   skills: "React.js, Redux, Javascript and Typescript",
   mail: "mailto:harishbaskar94@gmail.com",
   githuburl: "https://github.com/HarishBaskar",
