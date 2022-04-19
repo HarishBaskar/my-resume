@@ -1,6 +1,6 @@
 .downarrow {
   align-items: center;
-  border: 2rem solid white;
+  border: 2rem solid #0074ba;
   border-width: 0 0.5rem 0.5rem 0;
   display: inline-block;
   padding: 0.4rem;
@@ -17,27 +17,29 @@
 
 .content {
   display: flex;
-  position: relative;
-  min-height: 83.5vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 86.5vh;
 }
 
 @media screen and (max-width: 799px) {
-  .content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .arrowcontainer {
     margin-left: 50%;
   }
-}
-
-@media screen and (min-width: 800px) {
   .content {
     align-items: center;
-    justify-content: space-around;
-    justify-content: space-evenly;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 0 auto;
+    height: 84vh;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .content {
     padding: 4rem;
   }
 }

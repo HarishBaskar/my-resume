@@ -1,6 +1,15 @@
+.topresumecontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .resumecontainer {
   color: white;
-  background-color: #e6ffff;
+  background-color: #ffffff;
   position: relative;
 }
 

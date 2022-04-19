@@ -73,16 +73,16 @@ th:not([align]) {
 }
 
 html {
-  background-color: #485461;
-  background-image: linear-gradient(to right, #28313b, #24243e);
-  color: #fff;
+  background-color: #ccebff;
+  /* background-image: linear-gradient(to right, #28313b, #24243e); */
+  background-image: none;
+  color: #333;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 1em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   min-height: 100vh;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 a {

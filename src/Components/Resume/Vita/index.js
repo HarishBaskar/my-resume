@@ -8,7 +8,7 @@ const Vita = () => {
       <div className={Styles.header}>My Professional story</div>
       <div className={Styles.timeline}>
         <div className={cx(Styles.container, Styles.left)}>
-          <div className={Styles.content}>
+          <div className={Styles.vitacontent}>
             <h2>
               <strong>2012 - 2016</strong>
             </h2>
@@ -16,121 +16,186 @@ const Vita = () => {
               <strong>Bachelor of Engineering</strong>
             </h2>
             <h1>
-              <a href="http://www.skcet.ac.in/index.html" target="_blank" title="SKCET" rel="noopener noreferrer">
+              <a
+                href="http://www.skcet.ac.in/index.html"
+                target="_blank"
+                title="SKCET"
+                rel="noopener noreferrer"
+              >
                 Sri Krishna College of Engineering and Technology, Coimbatore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
-                <li>I graduated with Bachelor of Engineering degree in Electronics and
-                Communication Engineering.</li>
-               </ul>
+                <li>
+                  I graduated with Bachelor of Engineering degree in Electronics
+                  and Communication Engineering.
+                </li>
+              </ul>
               <div className={Styles.highlightscontainer}>
                 <strong>Highlights:</strong>
                 <ul>
-                    <li>Developed Web applications for college events</li>
-                    <li>ECE Department topper(4th place - out of 230 students)</li>
-                    <li>CGPA: 9.17</li>
+                  <li>Developed Web applications for college events</li>
+                  <li>
+                    ECE Department topper(4th place - out of 230 students)
+                  </li>
+                  <li>CGPA: 9.17</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
         <div className={cx(Styles.container, Styles.right)}>
-          <div className={Styles.content}>
+          <div className={Styles.vitacontent}>
             <h2>
-              <strong>2017 - 2018</strong>
-            </h2>
-            <h2>
-              <strong>Software Engineer</strong>
-            </h2>
-            <h1>
-              <a href="https://www.infosys.com/about.html" target="_blank" title="Infosys" rel="noopener noreferrer">
-                Infosys, Bangalore
-              </a>
-            </h1>
-            <p>
-              <ul className={Styles.descriptioncontainer}>
-                <li>I started as a software engineer in bangalore and 
-                developed end to end scalable web applications for health care systems.</li>
-                <li>Over the course of time, I gained expertise in front end development - HTML/CSS and Javascript and C# on backend.</li>
-               </ul>
-               <div className={Styles.highlightscontainer}>
-                <strong>Technologies used:</strong>
-                <ul>
-                    <li>Javascript, HTML, CSS and C#</li>
-                </ul>
-                <strong>Domain:</strong>
-                <ul>
-                      <li>Health care</li>
-                </ul>
-              </div>
-            </p>
-          </div>
-        </div>
-        <div className={cx(Styles.container, Styles.left)}>
-          <div className={Styles.content}>
-            <h2>
-              <strong>2018 - 2019</strong>
+              <strong>2016 - 2019</strong>
             </h2>
             <h2>
               <strong>Senior Software Engineer</strong>
             </h2>
             <h1>
-              <a href="https://www.infosys.com/about.html" target="_blank" title="Infosys" rel="noopener noreferrer">
+              <a
+                href="https://www.infosys.com/about.html"
+                target="_blank"
+                title="Infosys"
+                rel="noopener noreferrer"
+              >
                 Infosys, Bangalore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
-                <li>Mentored my Juniors and helped them to implement front-end modules.</li>
-                <li>Involved myself in design and development of Web apps using React JS.</li>
+                <li>
+                  I started as a software engineer in bangalore and developed
+                  end to end scalable web applications for health care systems.
+                </li>
+                <li>
+                  Mentored my Juniors and helped them to implement front-end
+                  modules.
+                </li>
+                <li>
+                  Involved myself in design and development of Web apps using
+                  React JS, Redux.
+                </li>
               </ul>
               <div className={Styles.highlightscontainer}>
                 <strong>Technologies used:</strong>
                 <ul>
-                    <li>Javascript, C# and Sharepoint 2013</li>
+                  <li>Javascript, React.js, Redux, HTML and CSS</li>
                 </ul>
                 <strong>Domain:</strong>
                 <ul>
                   <li>Health care</li>
                 </ul>
               </div>
-            </p>
+            </React.Fragment>
           </div>
         </div>
-        <div className={cx(Styles.container, Styles.right)}>
-          <div className={Styles.content}>
+        <div className={cx(Styles.container, Styles.left)}>
+          <div className={Styles.vitacontent}>
             <h2>
-              <strong>2019 - Present</strong>
+              <strong>2019 - 2021</strong>
             </h2>
             <h2>
-              <strong>Software Engineer</strong>
+              <strong>Senior Software Engineer</strong>
             </h2>
             <h1>
-              <a href="https://www.thomsonreuters.com/en/about-us.html" target="_blank" title="Thomson Reuters" rel="noopener noreferrer">
+              <a
+                href="https://www.thomsonreuters.com/en/about-us.html"
+                target="_blank"
+                title="Thomson Reuters"
+                rel="noopener noreferrer"
+              >
                 Thomson Reuters, Bangalore
               </a>
             </h1>
-            <p>
+            <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
-                <li>Here at TR, I expertised in front-end framework React JS.</li>
-                <li>Also I got an opportunity to work and gain experience with cloud technology (AWS).</li>
-                <li>I have pretty good experience with Agile development and been playing a prominent role in 
-                design and development of scalable web applications being used by 'X' number of clients(millions per second).</li>
+                <li>
+                  Here at TR, I expertised in front-end framework React.js.
+                </li>
+                <li>
+                  Participate in project planning sessions with team members to
+                  analyze development requirements, provide work breakdown and
+                  estimates of work
+                </li>
+                <li>
+                  Enhance and maintain News Tech application and deliver global
+                  release candidates with no compromise in quality.
+                </li>
+                <li>
+                  Communicate with News Tech users to exchange information,
+                  understand requirements and solve problems.
+                </li>
                 <li>Mentoring my juniors and leading the team.</li>
               </ul>
-             <div className={Styles.highlightscontainer}>
+              <div className={Styles.highlightscontainer}>
                 <strong>Technologies used:</strong>
                 <ul>
-                    <li>Javascript, SQL, React JS and C#</li>
+                  <li>
+                    React.js, Redux, Javascript, HTML, CSS, Git, Datadog, JIRA
+                  </li>
                 </ul>
                 <strong>Domain:</strong>
                 <ul>
-                      <li>News Technology</li>
-                  </ul>
+                  <li>News Technology</li>
+                </ul>
               </div>
-            </p>
+            </React.Fragment>
+          </div>
+        </div>
+        <div className={cx(Styles.container, Styles.right)}>
+          <div className={Styles.vitacontent}>
+            <h2>
+              <strong>2021 - Present</strong>
+            </h2>
+            <h2>
+              <strong>Senior Software Developer</strong>
+            </h2>
+            <h1>
+              <a
+                href="https://www.iqvia.com/"
+                target="_blank"
+                title="IQVIA"
+                rel="noopener noreferrer"
+              >
+                IQVIA, Bangalore
+              </a>
+            </h1>
+            <React.Fragment>
+              <ul className={Styles.descriptioncontainer}>
+                <li>Built web application for Clinical Data analysts.</li>
+                <li>
+                  Developed transaction-based model using React.js(v17), Redux
+                  and Typescript.
+                </li>
+                <li>
+                  Created enhanced login experience and online/offline
+                  experience.
+                </li>
+                <li>
+                  Handled team of 6 members and played a prominent role in
+                  requirement planning.
+                </li>
+                <li>
+                  Extensively used <strong>React testing library</strong> and
+                  <strong> Jest</strong> to achieve code coverage more than 85%.
+                </li>
+              </ul>
+              <div className={Styles.highlightscontainer}>
+                <strong>Technologies used:</strong>
+                <ul>
+                  <li>
+                    React.js, Redux, Javascript, Typescript, RTL, Jest and
+                    SonarQube
+                  </li>
+                </ul>
+                <strong>Domain:</strong>
+                <ul>
+                  <li>Health Care</li>
+                </ul>
+              </div>
+            </React.Fragment>
           </div>
         </div>
       </div>

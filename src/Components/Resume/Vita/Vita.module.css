@@ -14,16 +14,19 @@
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 110em;
   margin: 0 auto;
   font-size: 0.5em;
 }
 
+.vitacontent li {
+  font-size: 1rem;
+}
+
 .header {
-  font-size: 1.5rem;
+  font-size: 2.625rem;
   font-weight: bolder;
   color: #333;
-  letter-spacing: 0.4rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
@@ -38,7 +41,6 @@
 .timeline h1 {
   font-weight: bolder;
   margin: 6px auto;
-  color: #333;
   font-size: 1rem;
   text-decoration: underline;
 }
@@ -57,7 +59,7 @@
   content: "";
   position: absolute;
   width: 6px;
-  background-color: #333;
+  background-color: #0074ba;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -79,8 +81,8 @@
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: #ffeeee;
-  border: 4px solid #555;
+  background-color: white;
+  border: 4px solid #0074ba;
   top: 30px;
   border-radius: 50%;
   z-index: 1;
@@ -101,27 +103,19 @@
   left: -12px;
 }
 
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-image: linear-gradient(to left, #ccffff, #e6ffff);
-  position: relative;
-  border-radius: 6px;
-  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+.highlightscontainer strong {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.content:hover {
-  transform: scale(1.02) translateY(-4px);
+/* The actual content */
+.vitacontent {
+  padding: 20px 30px;
+  position: relative;
 }
 
 .highlightscontainer {
   margin-top: 1em;
-}
-
-.highlightscontainer strong {
-  color: #333;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .descriptioncontainer li {
@@ -143,35 +137,33 @@
   }
 
   .timeline h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 6px auto;
   }
 
   .timeline h1 {
     font-weight: bolder;
     margin: 6px auto;
-    color: #333;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .timeline li {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .timeline p {
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
 
   .highlightscontainer strong {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .header {
     font-size: 1.5rem;
     font-weight: bolder;
     color: #333;
-    letter-spacing: 0.4rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
     text-align: left;

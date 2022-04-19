@@ -1,0 +1,9 @@
+.loadingIndicator {
+  background-color: transparent;
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  height: auto;
+  width: 60%;
+  margin: 2rem auto;
+}
