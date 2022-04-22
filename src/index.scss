@@ -1,4 +1,5 @@
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@use "./styling/variable" as var;
+
 html,
 body,
 p,
@@ -73,10 +74,10 @@ th:not([align]) {
 }
 
 html {
-  background-color: #ccebff;
+  background-color: var.$light-blue-background;
   /* background-image: linear-gradient(to right, #28313b, #24243e); */
   background-image: none;
-  color: #333;
+  color: var.$text-color;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 1em;
   -moz-osx-font-smoothing: grayscale;

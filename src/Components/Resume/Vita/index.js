@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Vita.module.css";
+import Styles from "./Vita.module.scss";
 import cx from "classnames";
 
 const Vita = () => {

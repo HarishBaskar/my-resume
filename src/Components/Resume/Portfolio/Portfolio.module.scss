@@ -1,17 +1,32 @@
+@use "../../../styling/variable" as var;
+@use "../../../styling/reusableStyling" as reusableStyle;
+
 .topcontainer {
-  background-color: transparent;
+  background-color: var.$transparent-background;
   margin-top: 4vh;
 }
 
 .projects {
-  display: flex;
-  flex-direction: row;
+  @include reusableStyle.flexDirection;
   justify-content: space-evenly;
   background-color: transparent;
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 .card {
-  color: #555;
+  color: var.$text-color;
   font-size: 2rem;
   flex-basis: 30%;
   margin: 1rem;
@@ -28,34 +43,20 @@
 .topcontainer h1 {
   font-size: 2.625rem;
   font-weight: bolder;
-  color: #333;
+  color: var.$text-color;
   margin: 2vh auto;
   text-align: center;
-}
-
-.projects h2 {
-  font-size: 1.4rem;
-}
-
-.projects h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.projects p {
-  font-size: 1rem;
 }
 
 .container a {
   font-weight: bold;
   text-decoration: underline;
-  color: #0074ba;
+  color: var.$blue-background;
 }
 
 @media screen and (max-width: 1000px) {
   .projects {
-    display: flex;
-    flex-direction: column;
+    @include reusableStyle.flexDirection(column);
   }
 
   .card {

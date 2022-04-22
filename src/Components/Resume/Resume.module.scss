@@ -1,6 +1,8 @@
+@use "../../styling/variable" as var;
+@use "../../styling/reusableStyling" as reusableStyle;
+
 .topresumecontainer {
-  display: flex;
-  flex-direction: column;
+  @include reusableStyle.flexDirection(column);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -8,13 +10,13 @@
 }
 
 .resumecontainer {
-  color: white;
-  background-color: #ffffff;
+  color: var.$white-background;
+  background-color: var.$white-background;
   position: relative;
 }
 
 .insidestyles {
-  background-color: transparent;
+  background-color: var.$transparent-background;
   position: absolute;
   top: 60vh;
   left: 50%;

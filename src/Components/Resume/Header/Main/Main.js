@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Main.module.css";
+import Styles from "./Main.module.scss";
 
 const main = ({ personalInfo }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Projects.module.css";
+import Styles from "./Projects.module.scss";
 
 const OnboardingDesc = () => {
   return (

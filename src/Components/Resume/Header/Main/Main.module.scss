@@ -1,3 +1,5 @@
+@use "../../../../styling/variable" as var;
+
 .about {
   max-width: 26rem;
   font-size: 2rem;
@@ -5,6 +7,13 @@
 
 .hr {
   width: 14.65rem;
+}
+
+%button-transform {
+  transition-property: box-shadow, transform;
+  transform-origin: center;
+  transition-duration: 100ms;
+  will-change: box-shadow, transform;
 }
 
 @media screen and (max-width: 799px) {
@@ -58,13 +67,13 @@
 }
 
 .job {
-  color: #0074ba;
+  color: var.$blue-background;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .hr {
-  background-color: #ff470f;
+  background-color: var.$horizontal-line-color;
   border: none;
   content: "";
   height: 0.2rem;
@@ -84,63 +93,55 @@
 }
 
 .button {
-  transform-origin: center;
-  transition-duration: 100ms;
-}
-
-.button {
-  background-color: #0074ba;
+  background-color: var.$blue-background;
   border-radius: 290486px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #ffffff;
+  color: var.$white-background;
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
   padding: 1.25em 2em;
   text-shadow: none;
-  transition-property: box-shadow, transform;
   user-select: none;
   vertical-align: top;
   white-space: nowrap;
-  will-change: box-shadow, transform;
-}
+  @extend %button-transform;
 
-.button:hover {
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-  transform: scale(1.02) translateY(-4px);
+  &:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+  }
 }
 
 .social {
   display: flex;
   margin-top: 1.5rem;
-}
+  li {
+    height: 2rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    width: 2rem;
+    padding-left: 0;
+  }
+  a {
+    color: var.$blue-background;
+    align-items: center;
+    display: flex;
+    font-size: 2.25rem;
+    height: 2rem;
+    justify-content: center;
+    width: 2rem;
+    padding-left: 0;
 
-.social li {
-  height: 2rem;
-  margin-right: 1.5rem;
-  text-align: center;
-  width: 2rem;
-  padding-left: 0;
-}
+    &:hover {
+      opacity: 1;
+      transform: scale(1.25);
+      color: var.$blue-background;
+    }
 
-.social a {
-  color: #0074ba;
-  align-items: center;
-  display: flex;
-  font-size: 2.25rem;
-  height: 2rem;
-  justify-content: center;
-  width: 2rem;
-  padding-left: 0;
-}
-
-.social a:hover {
-  opacity: 1;
-  transform: scale(1.25);
-  color: #0074ba;
-}
-
-.social a:active {
-  opacity: 1;
-  transform: scale(1.1);
+    &:active {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
 }

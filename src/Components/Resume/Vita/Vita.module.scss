@@ -1,6 +1,8 @@
+@use "../../../styling/variable" as var;
+
 .vita {
-  background-color: transparent;
-  color: #555;
+  background-color: var.$transparent-background;
+  color: var.$text-color;
   min-height: auto;
   position: relative;
   font-size: 1em;
@@ -17,6 +19,34 @@
   max-width: 110em;
   margin: 0 auto;
   font-size: 0.5em;
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 6px auto;
+  }
+
+  h1 {
+    font-weight: bolder;
+    margin: 6px auto;
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: var.$blue-background;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
 }
 
 .vitacontent li {
@@ -26,44 +56,15 @@
 .header {
   font-size: 2.625rem;
   font-weight: bolder;
-  color: #333;
+  color: var.$text-color;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.timeline h2 {
-  font-size: 1.2rem;
-  margin: 6px auto;
-}
-
-.timeline h1 {
-  font-weight: bolder;
-  margin: 6px auto;
-  font-size: 1rem;
-  text-decoration: underline;
-}
-
-.timeline p {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
 .header {
   left: 50%;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #0074ba;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
 }
 
 /* Container around content */
@@ -72,20 +73,19 @@
   position: relative;
   background-color: inherit;
   width: 50%;
-}
 
-/* The circles on the timeline */
-.container::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: white;
-  border: 4px solid #0074ba;
-  top: 30px;
-  border-radius: 50%;
-  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: var.$white-background;
+    border: 4px solid var.$blue-background;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+  }
 }
 
 /* Place the container to the left */
@@ -103,11 +103,6 @@
   left: -12px;
 }
 
-.highlightscontainer strong {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 /* The actual content */
 .vitacontent {
   padding: 20px 30px;
@@ -116,13 +111,18 @@
 
 .highlightscontainer {
   margin-top: 1em;
+
+  ul {
+    list-style-type: square;
+  }
+
+  strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }
 
 .descriptioncontainer li {
-  list-style-type: square;
-}
-
-.highlightscontainer ul {
   list-style-type: square;
 }
 
@@ -130,30 +130,28 @@
 @media screen and (max-width: 799px) {
   .timeline {
     font-size: 0.5rem;
-  }
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
+    &::after {
+      left: 31px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 6px auto;
+    }
 
-  .timeline h2 {
-    font-size: 1.2rem;
-    margin: 6px auto;
-  }
+    h1 {
+      font-weight: bolder;
+      margin: 6px auto;
+      font-size: 1.2rem;
+    }
 
-  .timeline h1 {
-    font-weight: bolder;
-    margin: 6px auto;
-    font-size: 1.2rem;
-  }
+    li {
+      font-size: 1.2rem;
+    }
 
-  .timeline li {
-    font-size: 1.2rem;
-  }
-
-  .timeline p {
-    font-weight: bold;
-    font-size: 1.2rem;
+    p {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
   }
 
   .highlightscontainer strong {
@@ -174,14 +172,14 @@
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-  }
 
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    &::before {
+      left: 60px;
+      border: medium solid var.$white-background;
+      border-width: 10px 10px 10px 0;
+      border-color: var.$transparent-background var.$white-background
+        var.$transparent-background var.$transparent-background;
+    }
   }
 
   /* Make sure all circles are at the same spot */

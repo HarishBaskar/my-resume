@@ -1,0 +1,8 @@
+@mixin flexDirection($type: row) {
+  display: flex;
+  @if $type == row {
+    flex-direction: row;
+  } @else if $type == column {
+    flex-direction: column;
+  }
+}

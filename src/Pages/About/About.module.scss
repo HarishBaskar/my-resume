@@ -1,14 +1,17 @@
-.aboutcontainer p {
-  font-size: 8rem;
+%common-content {
   margin: 8rem auto;
   text-align: center;
+}
+
+.aboutcontainer p {
+  font-size: 8rem;
+  @extend %common-content;
   padding: 0 4rem;
 }
 
 @media only screen and (max-width: 799px) {
   .aboutcontainer p {
     font-size: 2rem;
-    margin: 8rem auto;
-    text-align: center;
+    @extend %common-content;
   }
 }
