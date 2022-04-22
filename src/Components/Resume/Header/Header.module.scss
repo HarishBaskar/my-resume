@@ -1,4 +1,5 @@
 @use "../../../styling/variable" as var;
+@use "../../../styling/reusableStyling" as reusableStyle;
 
 %center-content {
   justify-content: center;
@@ -35,7 +36,7 @@
   }
   .content {
     @extend %center-content;
-    flex-direction: column;
+    @include reusableStyle.flexDirection(column);
     flex-basis: auto;
     margin: 0 auto;
     height: 84vh;

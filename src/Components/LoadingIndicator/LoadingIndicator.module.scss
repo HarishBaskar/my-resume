@@ -1,0 +1,11 @@
+@use "../../styling/variable" as var;
+
+.loadingIndicator {
+  background-color: var.$transparent-background;
+  position: relative;
+  color: var.$white-background;
+  font-size: 4rem;
+  height: auto;
+  width: 60%;
+  margin: 2rem auto;
+}
