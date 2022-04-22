@@ -6,22 +6,22 @@
   height: auto;
   margin: 0 auto;
   max-width: 50em;
-}
 
-.aboutme h1 {
-  font-size: 2.625rem;
-  font-weight: bolder;
-  color: var.$text-color;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4vh;
-  text-align: center;
-}
+  h1 {
+    font-size: 2.625rem;
+    font-weight: bolder;
+    color: var.$text-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    text-align: center;
+  }
 
-.aboutme p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin: 4vh 4vw;
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 4vh 4vw;
+  }
 }
 
 @media screen and (max-width: 799px) {
