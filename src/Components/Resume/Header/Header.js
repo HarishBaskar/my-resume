@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryImage from "./PrimaryImage/PrimaryImage";
 import Main from "./Main/Main";
-import Styles from "./Header.module.css";
+import Styles from "./Header.module.scss";
 
 const Header = ({ personalInfo }) => {
   return (

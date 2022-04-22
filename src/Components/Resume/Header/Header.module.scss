@@ -1,6 +1,14 @@
+@use "../../../styling/variable" as var;
+
+%center-content {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .downarrow {
   align-items: center;
-  border: 2rem solid #0074ba;
+  border: 2rem solid var.$blue-background;
   border-width: 0 0.5rem 0.5rem 0;
   display: inline-block;
   padding: 0.4rem;
@@ -17,9 +25,7 @@
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  @extend %center-content;
   height: 86.5vh;
 }
 
@@ -28,9 +34,7 @@
     margin-left: 50%;
   }
   .content {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    @extend %center-content;
     flex-direction: column;
     flex-basis: auto;
     margin: 0 auto;

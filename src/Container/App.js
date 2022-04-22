@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 import Resume from "../Components/Resume/Resume";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import * as ROUTES from "../Constants/Routes";

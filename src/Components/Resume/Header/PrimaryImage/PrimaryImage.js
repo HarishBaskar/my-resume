@@ -1,6 +1,6 @@
 import React from "react";
 import Portrait from "../../../../Images/harish_baskar.JPG";
-import Styles from "./PrimaryImage.module.css";
+import Styles from "./PrimaryImage.module.scss";
 
 const primaryImage = () => {
   return (

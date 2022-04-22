@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import Wallpaper1 from "../../Images/wallpaper1.jpg";
-import Styles from "./Resume.module.css";
+import Styles from "./Resume.module.scss";
 
 const transformElement = (percentage) => {
   return (

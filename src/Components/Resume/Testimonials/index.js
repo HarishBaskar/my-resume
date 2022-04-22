@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Testimonials.module.css";
+import Styles from "./Testimonials.module.scss";
 import ColleaguePic from "../../../Images/samplepic.png";
 
 const Testimonials = () => {

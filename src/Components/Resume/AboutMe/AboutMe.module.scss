@@ -1,6 +1,8 @@
+@use "../../../styling/variable" as var;
+
 .aboutme {
-  background-color: transparent;
-  color: #555;
+  background-color: var.$transparent-background;
+  color: var.$text-color;
   height: auto;
   margin: 0 auto;
   max-width: 50em;
@@ -9,7 +11,7 @@
 .aboutme h1 {
   font-size: 2.625rem;
   font-weight: bolder;
-  color: #333;
+  color: var.$text-color;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4vh;

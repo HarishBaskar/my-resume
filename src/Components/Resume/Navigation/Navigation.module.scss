@@ -1,0 +1,88 @@
+@use "../../../styling/variable" as var;
+
+.navigation {
+  background-color: var.$transparent-background;
+  position: relative;
+  z-index: 10;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: var.$transparent-background;
+  }
+
+  li {
+    button {
+      background-color: var.$transparent-background;
+      border: var.$transparent-background;
+      margin: 16px;
+      color: var.$white-background;
+      font-size: 20px;
+    }
+
+    a {
+      display: block;
+      color: var.$blue-background;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      font-weight: bolder;
+    }
+  }
+
+  .menu li a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navigation {
+    background-color: var.$transparent-background;
+    min-height: 5vh;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: var.$transparent-background;
+    }
+
+    li {
+      float: right;
+    }
+
+    li {
+      a {
+        display: block;
+        color: var.$blue-background;
+        text-align: center;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        font-size: 150%;
+        font-weight: bolder;
+      }
+
+      button {
+        background-color: var.$transparent-background;
+        border: var.$transparent-background;
+        margin: 16px;
+        color: var.$white-background;
+        font-size: 20px;
+      }
+
+      a:hover,
+      button:hover {
+        background-color: var.$blue-background;
+        color: var.$white-background !important;
+      }
+    }
+
+    .heading {
+      float: left !important;
+      font-size: 1.5rem;
+    }
+  }
+}

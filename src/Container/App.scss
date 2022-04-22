@@ -1,3 +1,5 @@
+@use "../styling/variable" as var;
+
 .navigation {
   display: flex;
   position: relative;
@@ -14,7 +16,7 @@
 
 .wallpaper {
   /* background-image: url("../Images/background.jpg"); */
-  background-color: #ffff;
+  background-color: var.$white-background;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

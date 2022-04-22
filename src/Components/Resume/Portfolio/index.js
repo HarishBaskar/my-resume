@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Portfolio.module.css";
+import Styles from "./Portfolio.module.scss";
 import ProjectPic from "../../../Images/coffee.jpg";
 import NewsPic from "../../../Images/news.jpg";
 import DatabasePic from "../../../Images/database.jpg";

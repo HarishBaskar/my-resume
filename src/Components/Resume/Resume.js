@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 import AboutMe from "./AboutMe/index";
 import Portfolio from "./Portfolio/index";
 import Vita from "./Vita/index";
-import Styles from "./Resume.module.css";
+import Styles from "./Resume.module.scss";
 import Footer from "./Footer/index";
 import LoadingIndicator from "../LoadingIndicator/LoadingIndicator";
 

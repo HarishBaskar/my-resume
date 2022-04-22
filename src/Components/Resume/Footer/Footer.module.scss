@@ -1,6 +1,8 @@
+@use "../../../styling/variable" as var;
+
 .footer {
-  background-color: transparent;
-  color: black;
+  background-color: var.$transparent-background;
+  color: var.$text-color;
   height: 12rem;
   margin: 0 auto;
   max-width: 50em;
@@ -16,10 +18,10 @@
 }
 
 .footerbutton {
-  background-color: #0074ba;
+  background-color: var.$blue-background;
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #ffffff;
+  color: var.$white-background;
   display: inline-block;
   font-size: 1rem;
   line-height: 1;
