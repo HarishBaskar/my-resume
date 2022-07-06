@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
+import Wallpaper1WebP from "../../Images/wallpaper1.webp";
 import Wallpaper1 from "../../Images/wallpaper1.jpg";
 import Styles from "./Resume.module.scss";
 
@@ -23,7 +24,7 @@ const transformElement = (percentage) => {
 const ParallaxElement = () => {
   return (
     <Parallax
-      bgImage={Wallpaper1}
+      bgImage={Wallpaper1WebP || Wallpaper1}
       strength={300}
       className={Styles.parallaxcontainer}
       renderLayer={(percentage) => transformElement(percentage)}

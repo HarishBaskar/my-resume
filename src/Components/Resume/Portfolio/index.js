@@ -1,9 +1,13 @@
 import React from "react";
 import Styles from "./Portfolio.module.scss";
 import ProjectPic from "../../../Images/coffee.jpg";
+import ProjectWebPPic from "../../../Images/coffee.webp";
 import NewsPic from "../../../Images/news.jpg";
+import NewsWebPPic from "../../../Images/news.webp";
 import DatabasePic from "../../../Images/database.jpg";
+import DatabaseWebPPic from "../../../Images/database.webp";
 import OnboardingPic from "../../../Images/onboarding.jpg";
+import OnboardingWebPPic from "../../../Images/onboarding.webp";
 
 const Projects = () => {
   const projects = [
@@ -11,6 +15,7 @@ const Projects = () => {
       projectname: "News filing app",
       link: "/projects",
       picture: NewsPic,
+      webPPicture: NewsWebPPic,
       description:
         "A web app developed for News Editors to file news and publish content on the fly....",
     },
@@ -18,6 +23,7 @@ const Projects = () => {
       projectname: "Onboarding tool",
       link: "/projects",
       picture: OnboardingPic,
+      webPPicture: OnboardingWebPPic,
       description:
         "A web application developed to onboard new users and assign training according to depart....",
     },
@@ -25,6 +31,7 @@ const Projects = () => {
       projectname: "Database tool",
       link: "/projects",
       picture: DatabasePic,
+      webPPicture: DatabaseWebPPic,
       description:
         "A web app developed to add new 'News' items/entities to DB. This action is restricted to....",
     },
@@ -32,6 +39,7 @@ const Projects = () => {
       projectname: "YouThere app",
       link: "/projects",
       picture: ProjectPic,
+      webPPicture: ProjectWebPPic,
       description:
         "A web app developed to send and get donations to help people in need....",
     },
@@ -41,7 +49,11 @@ const Projects = () => {
     return (
       <div className={Styles.card} key={`Project-${project.projectname}`}>
         <div className={Styles.colleagueimage}>
-          <img id="pictureImage" src={project.picture} alt="Portrait" />
+          <picture>
+            <source type="image/webp" srcset={project.webPPicture} />
+            <source type="image/jpeg" srcset={project.picture} />
+            <img src={project.webPPicture} alt="Project" />
+          </picture>
         </div>
         <div className={Styles.container}>
           <h2>{project.projectname}</h2>
@@ -51,27 +63,39 @@ const Projects = () => {
               switch (project.projectname) {
                 case "Onboarding tool":
                   return (
-                    <a href="/projects#onboarding" title="Learn more">
-                      Learn more
-                    </a>
+                    <p>
+                      learn more about{" "}
+                      <a href="/projects#onboarding" title="Learn more">
+                        Onboarding tool
+                      </a>
+                    </p>
                   );
                 case "News filing app":
                   return (
-                    <a href="/projects#news" title="Learn more">
-                      Learn more
-                    </a>
+                    <p>
+                      learn more about{" "}
+                      <a href="/projects#news" title="Learn more">
+                        News filing app
+                      </a>
+                    </p>
                   );
                 case "Database tool":
                   return (
-                    <a href="/projects#database" title="Learn more">
-                      Learn more
-                    </a>
+                    <p>
+                      learn more about{" "}
+                      <a href="/projects#database" title="Learn more">
+                        Database tool
+                      </a>
+                    </p>
                   );
                 case "YouThere app":
                   return (
-                    <a href="/projects#youthere" title="Learn more">
-                      Learn more
-                    </a>
+                    <p>
+                      learn more about{" "}
+                      <a href="/projects#youthere" title="Learn more">
+                        YouThere app
+                      </a>
+                    </p>
                   );
                 default:
                   return null;
