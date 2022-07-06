@@ -16,7 +16,7 @@
     transition-duration: 100ms;
     background-color: var.$blue-background;
     border-radius: 2rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem var.$footer-button-shadow;
     color: var.$white-background;
     display: inline-block;
     font-size: 1rem;
@@ -31,7 +31,7 @@
     will-change: box-shadow, transform;
 
     &:hover {
-      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1.5rem 3rem var.$footer-button-shadow;
       transform: scale(1.02) translateY(-4px);
     }
   }
