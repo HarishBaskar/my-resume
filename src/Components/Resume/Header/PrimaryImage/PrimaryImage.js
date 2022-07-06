@@ -9,6 +9,7 @@ const primaryImage = () => {
         <div className={Styles.pictureshadow}></div>
         <img
           id="pictureImage"
+          fetchpriority="high"
           className={Styles.pictureimage}
           title="Harish Baskar"
           src={Portrait}

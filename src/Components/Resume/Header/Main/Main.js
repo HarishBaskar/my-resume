@@ -29,12 +29,12 @@ const main = ({ personalInfo }) => {
       <div>
         <ul className={Styles.social}>
           <li>
-            <a href={personalInfo.githuburl}>
+            <a href={personalInfo.githuburl} aria-label="github link">
               <i className="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href={personalInfo.linkedinurl}>
+            <a href={personalInfo.linkedinurl} aria-label="LinkedIn link">
               <i className="fab fa-linkedin"></i>
             </a>
           </li>
