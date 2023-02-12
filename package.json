@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
     "firebase": "^8.3.0",
-    "firebase-tools": "^9.6.1",
+    "firebase-tools": "^11.22.0",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
