@@ -11,13 +11,15 @@
     "classnames": "^2.2.6",
     "firebase": "^8.3.0",
     "firebase-tools": "^9.6.1",
+    "nvm": "^0.0.4",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-parallax": "^3.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "sass": "^1.77.8"
   },
   "scripts": {
     "start": "react-scripts start",

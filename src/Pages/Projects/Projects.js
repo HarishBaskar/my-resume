@@ -1,37 +1,38 @@
 import React from "react";
-import Styles from "./Projects.module.css";
+import Styles from "./Projects.module.scss";
 
 const OnboardingDesc = () => {
   return (
     <div className={Styles.container}>
       <ul>
         <li>
-          A web application developed to onboard new users and assign training
-          according to their department.
+          Developed a web application for onboarding new users and assigning
+          training based on departmental needs.
         </li>
         <li>
-          Developed using <strong>JavaScript, React JS, and C#</strong>.
+          Utilized{" "}
+          <strong>
+            JavaScript, React.js, Redux, Redux Toolkit, and Redux-Saga
+          </strong>{" "}
+          for front-end development.
         </li>
         <li>
-          Used <strong>Entity Framework</strong> to establish mapping with SQL
-          Server Database.
+          Implemented <strong>Micro Frontend architecture</strong> using Module
+          Federation for modular and scalable development.
         </li>
         <li>
-          Worked on the modules for implementing the Front-end logic using React
-          JS.
+          Managed both onboarding and offboarding processes within the
+          application.
         </li>
-        <li>The application deals with on-boarding and off-boarding users.</li>
+        <li>Assigned roles to users based on business requirements.</li>
         <li>
-          Users will be assigned with roles based on business requirement.{" "}
-        </li>
-        <li>
-          The project was developed as per the inputs given by the Client and
-          the web application was successfully deployed in production
+          Developed and deployed the application according to client
+          specifications, ensuring successful integration in the production
           environment.
         </li>
         <li>
-          The web application served its purpose by replacing a third-party
-          application, eventually saving <strong>$3000</strong> per year.
+          Replaced a third-party tool, achieving an annual cost saving of{" "}
+          <strong>$3,000</strong>.
         </li>
       </ul>
     </div>
@@ -43,34 +44,39 @@ const NewsDesc = () => {
     <div className={Styles.container}>
       <ul>
         <li>
-          A web app developed for News Editors to file news and publish content
-          on the fly.
+          Developed a dynamic web application for News Editors, enabling
+          real-time news filing and content publishing.
         </li>
         <li>
-          Developed multiple modules using{" "}
-          <strong>React JS, Redux and Typescript</strong>.
-        </li>
-        <li>The app supports both online and offline experience.</li>
-        <li>
-          Authentication and Authorization was implemented using home grown API
-          methods.
+          Created multiple modules leveraging{" "}
+          <strong>React.js, Redux, and TypeScript</strong> for a robust and
+          scalable front-end.
         </li>
         <li>
-          Effectively used <strong>Github Actions</strong> for deployment and
-          simultaneous testing of various modules.
+          Implemented seamless support for both online and offline usage,
+          enhancing accessibility and user experience.
         </li>
         <li>
-          The app is hosted in AWS using a combination of{" "}
-          <strong>S3 bucket</strong> and <strong>Cache behaviors</strong>.
+          Designed and integrated custom authentication and authorization
+          mechanisms using proprietary API methods.
         </li>
         <li>
-          Used combination of <strong>React Testing library</strong> and{" "}
-          <strong>Jest </strong>
-          for unit testing and worked with team to achieve code coverage of 90%.
+          Utilized <strong>GitHub Actions</strong> for streamlined deployment
+          and continuous testing of various application modules.
         </li>
         <li>
-          The Web app is actively used by more than 400 users and provides
-          features at the cost of very low latency
+          Deployed the application on AWS, utilizing <strong>S3 buckets</strong>{" "}
+          and <strong>Cache behaviors</strong> for optimized storage and
+          performance.
+        </li>
+        <li>
+          Achieved comprehensive unit testing with a combination of{" "}
+          <strong>React Testing Library</strong> and <strong>Jest</strong>,
+          reaching a code coverage of 90%.
+        </li>
+        <li>
+          The application supports over 400 active users, delivering features
+          with minimal latency and high efficiency.
         </li>
       </ul>
     </div>
@@ -81,23 +87,28 @@ const DatabaseDesc = () => {
   return (
     <div className={Styles.container}>
       <ul>
-        <li>A web app developed to add new 'News' items/entities to DB.</li>
-        <li>This action is restricted to Admins only.</li>
         <li>
-          The user interface was developed using{" "}
-          <strong>React JS, Redux and Typescript</strong>.
+          A web application designed for adding new 'News' items/entities to the
+          database.
+        </li>
+        <li>Restricted access to this functionality to Admins only.</li>
+        <li>
+          Developed the user interface using{" "}
+          <strong>React.js, Redux, and TypeScript</strong>.
         </li>
         <li>
-          Authentication and Authorization was implemented using Token based
+          Implemented authentication and authorization using a token-based
           method.
         </li>
-        <li>Implemented Web API security using JWT.</li>
         <li>
-          Integrated DB with Back end code using{" "}
-          <strong>EF 6 Code First</strong> approach.
+          Secured the Web API with <strong>JWT</strong> for robust security.
         </li>
         <li>
-          Usage of <strong>GITHUB</strong> as source control and version
+          Integrated the database with the back-end code using modern
+          approaches.
+        </li>
+        <li>
+          Utilized <strong>GitHub</strong> for source control and version
           management.
         </li>
         <li>
@@ -114,37 +125,40 @@ const YouTHereDesc = () => {
     <div className={Styles.container}>
       <ul>
         <li>
-          A web app developed for a NGO organization to send and get donations
-          for people in need.
+          Developed a web application for an NGO to facilitate sending and
+          receiving donations for people in need.
         </li>
         <li>
-          Developed User Interface using{" "}
-          <strong>React JS and Javascript</strong>.
+          Designed the user interface using{" "}
+          <strong>React.js and JavaScript</strong>.
         </li>
         <li>
-          Developed <strong>RESTFUL Web API</strong> for front end consumption
-          using <strong>ASP.NET Web API.</strong>
+          Created a <strong>RESTful Web API</strong> for front-end integration
+          with <strong>ASP.NET Web API</strong>.
         </li>
-        <li>Development of Database, Tables and other DB components.</li>
         <li>
-          Integrated DB with Back end code using{" "}
+          Managed the development of the database, including tables and other
+          components.
+        </li>
+        <li>
+          Integrated the database with the back-end code using the{" "}
           <strong>EF 6 Code First</strong> approach.
         </li>
         <li>
-          Authentication and Authorization was implemented using{" "}
-          <strong>Firebase.</strong>
+          Implemented authentication and authorization using{" "}
+          <strong>Firebase</strong>.
         </li>
         <li>
-          Usage of <strong>GITHUB</strong> as source control and version
+          Utilized <strong>GitHub</strong> for source control and version
           management.
         </li>
         <li>
-          Business logic implementation using <strong>C#</strong> and{" "}
-          <strong>LINQ</strong> for DB changes.
+          Applied business logic with <strong>C#</strong> and{" "}
+          <strong>LINQ</strong> for database operations.
         </li>
         <li>
           Incorporated <strong>Swagger UI</strong> to visualize and interact
-          with the API resources.
+          with API resources.
         </li>
       </ul>
     </div>
@@ -164,8 +178,33 @@ const Projects = () => {
       projectname: "Onboarding Tool",
       modelused: "Agile model",
       desctype: "onboarding",
-      roles:
-        "Played a prominent role in the team and also involved myself right from design phase till implementation.",
+      roles: (
+        <ul>
+          <li>
+            Directed the development team throughout the project lifecycle, from
+            design to implementation.
+          </li>
+          <li>
+            Engineered the front-end logic with <strong>React.js</strong>, and
+            managed state using <strong>Redux</strong> and{" "}
+            <strong>Redux Toolkit</strong>.
+          </li>
+          <li>
+            Utilized <strong>Redux-Saga</strong> for handling complex side
+            effects and asynchronous operations.
+          </li>
+          <li>
+            Implemented <strong>Micro Frontend architecture</strong> with{" "}
+            <strong>Module Federation</strong> for modular and scalable
+            development.
+          </li>
+          <li>
+            Coordinated with the client to customize the application to meet
+            specific needs and ensured its successful deployment in the
+            production environment.
+          </li>
+        </ul>
+      ),
     },
     {
       projectname: "Database tool",

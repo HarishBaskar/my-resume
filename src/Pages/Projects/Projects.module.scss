@@ -1,0 +1,108 @@
+// Variables
+$primary-color: #0074ba;
+$secondary-color: #555;
+$tertiary-color: #333;
+$light-background: #ffffff;
+$hover-shadow: rgba(219, 82, 82, 0.2);
+$font-size-large: 2.625rem;
+$font-size-medium: 2rem;
+$font-size-small: 1.2rem;
+$font-size-xsmall: 1rem;
+$margin-top-large: 4vh;
+$margin-bottom-medium: 2vh;
+$padding: 1.4rem;
+$border-left-width: 0.3rem;
+
+// Top Container
+.topcontainer {
+  background-color: transparent;
+  position: relative;
+  margin: 0 auto;
+  margin-top: $margin-top-large;
+  max-width: 60em;
+
+  h1 {
+    font-size: $font-size-large;
+    font-weight: bolder;
+    color: $primary-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $margin-top-large;
+    text-align: center;
+  }
+}
+
+// Projects Container
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 2rem;
+
+  h2 {
+    font-size: $font-size-medium;
+    font-weight: bolder;
+    color: $secondary-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $margin-bottom-medium;
+    text-align: center;
+  }
+
+  h3 {
+    color: $tertiary-color;
+    font-size: $font-size-small;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    font-size: $font-size-xsmall;
+    list-style-type: square;
+  }
+
+  p {
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    font-size: $font-size-xsmall;
+  }
+
+  b {
+    color: $tertiary-color;
+    font-weight: bold;
+  }
+}
+
+// Card Component
+.card {
+  background: $light-background;
+  font-size: $font-size-medium;
+  max-width: 100vw;
+  margin: 2rem;
+  padding: $padding;
+  transition: 0.25s;
+  border-left: $border-left-width solid $primary-color;
+
+  img {
+    max-height: 7rem;
+    max-width: 7rem;
+    position: relative;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 5px 0 $hover-shadow;
+  }
+}
+
+// Media Query
+@media screen and (max-width: 358px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Vita.module.css";
+import Styles from "./Vita.module.scss";
 import cx from "classnames";
 
 const Vita = () => {
@@ -28,18 +28,27 @@ const Vita = () => {
             <React.Fragment>
               <ul className={Styles.descriptioncontainer}>
                 <li>
-                  I graduated with Bachelor of Engineering degree in Electronics
-                  and Communication Engineering.
+                  I earned a Bachelor of Engineering degree in Electronics and
+                  Communication Engineering from Sri Krishna College of
+                  Engineering and Technology, Coimbatore.
                 </li>
               </ul>
               <div className={Styles.highlightscontainer}>
                 <strong>Highlights:</strong>
                 <ul>
-                  <li>Developed Web applications for college events</li>
                   <li>
-                    ECE Department topper(4th place - out of 230 students)
+                    Developed innovative web applications to support and enhance
+                    college events.
                   </li>
-                  <li>CGPA: 9.17</li>
+                  <li>
+                    Ranked <span class="highlight">4th</span> out of{" "}
+                    <span class="highlight">230</span> students in the
+                    Electronics and Communication Engineering department.
+                  </li>
+                  <li>
+                    Achieved a commendable CGPA of{" "}
+                    <span class="highlight">9.17</span>.
+                  </li>
                 </ul>
               </div>
             </React.Fragment>
@@ -64,18 +73,31 @@ const Vita = () => {
               </a>
             </h1>
             <React.Fragment>
+              <div className={Styles.descriptioncontainer}>
+                <p>
+                  As a Senior Software Engineer at Infosys, Bangalore, I was
+                  instrumental in designing and developing scalable web
+                  applications for the healthcare domain. My role involved both
+                  technical leadership and hands-on development, focusing on
+                  delivering high-quality solutions to meet client needs.
+                </p>
+              </div>
+              <div className={Styles.highlightscontainer}>
+                <strong>Key Responsibilities:</strong>
+              </div>
               <ul className={Styles.descriptioncontainer}>
                 <li>
-                  I started as a software engineer in bangalore and developed
-                  end to end scalable web applications for health care systems.
+                  Led the development of end-to-end web applications, ensuring
+                  scalability and performance in healthcare systems.
                 </li>
                 <li>
-                  Mentored my Juniors and helped them to implement front-end
-                  modules.
+                  Mentored junior developers, providing guidance on implementing
+                  front-end modules and best practices.
                 </li>
                 <li>
-                  Involved myself in design and development of Web apps using
-                  React JS, Redux.
+                  Played a pivotal role in the design and development of web
+                  applications using <strong>React.js</strong> and{" "}
+                  <strong>Redux</strong>.
                 </li>
               </ul>
               <div className={Styles.highlightscontainer}>
@@ -110,32 +132,51 @@ const Vita = () => {
               </a>
             </h1>
             <React.Fragment>
-              <ul className={Styles.descriptioncontainer}>
-                <li>
-                  Here at TR, I expertised in front-end framework React.js.
-                </li>
-                <li>
-                  Participate in project planning sessions with team members to
-                  analyze development requirements, provide work breakdown and
-                  estimates of work
-                </li>
-                <li>
-                  Enhance and maintain News Tech application and deliver global
-                  release candidates with no compromise in quality.
-                </li>
-                <li>
-                  Communicate with News Tech users to exchange information,
-                  understand requirements and solve problems.
-                </li>
-                <li>Mentoring my juniors and leading the team.</li>
-              </ul>
+              <div className={Styles.descriptioncontainer}>
+                <p>
+                  Specialized in React.js, I built and optimized scalable
+                  front-end solutions, led project planning and requirements
+                  analysis, and ensured high-quality, timely global releases of
+                  the News Tech application. I engaged with users to address
+                  issues and mentored junior developers to achieve project
+                  goals.
+                </p>
+              </div>
+
               <div className={Styles.highlightscontainer}>
-                <strong>Technologies used:</strong>
+                <strong>Key Responsibilities:</strong>
                 <ul>
                   <li>
-                    React.js, Redux, Javascript, HTML, CSS, Git, Datadog, JIRA
+                    Led the design and implementation of front-end features
+                    using React.js, ensuring high performance and
+                    responsiveness.
+                  </li>
+                  <li>
+                    Coordinated with cross-functional teams to define project
+                    requirements, manage timelines, and deliver solutions that
+                    meet user needs.
+                  </li>
+                  <li>
+                    Conducted code reviews and provided constructive feedback to
+                    maintain code quality and consistency.
+                  </li>
+                  <li>
+                    Developed and maintained comprehensive documentation for
+                    application features and technical processes.
+                  </li>
+                  <li>
+                    Implemented best practices for version control and
+                    continuous integration using Git and related tools.
                   </li>
                 </ul>
+
+                <strong>Technologies Used:</strong>
+                <ul>
+                  <li>
+                    React.js, Redux, JavaScript, HTML, CSS, Git, Datadog, JIRA
+                  </li>
+                </ul>
+
                 <strong>Domain:</strong>
                 <ul>
                   <li>News Technology</li>
@@ -150,7 +191,7 @@ const Vita = () => {
               <strong>2021 - Present</strong>
             </h2>
             <h2>
-              <strong>Senior Software Developer</strong>
+              <strong>Lead Software Developer</strong>
             </h2>
             <h1>
               <a
@@ -163,33 +204,54 @@ const Vita = () => {
               </a>
             </h1>
             <React.Fragment>
-              <ul className={Styles.descriptioncontainer}>
-                <li>Built web application for Clinical Data analysts.</li>
-                <li>
-                  Developed transaction-based model using React.js(v17), Redux
-                  and Typescript.
-                </li>
-                <li>
-                  Created enhanced login experience and online/offline
-                  experience.
-                </li>
-                <li>
-                  Handled team of 6 members and played a prominent role in
-                  requirement planning.
-                </li>
-                <li>
-                  Extensively used <strong>React testing library</strong> and
-                  <strong> Jest</strong> to achieve code coverage more than 85%.
-                </li>
-              </ul>
+              <div className={Styles.descriptioncontainer}>
+                <p>
+                  Led the development of a critical web application for clinical
+                  data analysis, overseeing the design and implementation of
+                  scalable features. Directed project planning, collaborated
+                  with stakeholders to refine requirements, and ensured timely
+                  delivery through iterative releases. Championed high standards
+                  of code quality and application robustness.
+                </p>
+              </div>
+
               <div className={Styles.highlightscontainer}>
-                <strong>Technologies used:</strong>
-                <ul>
+                <strong>Key Responsibilities:</strong>
+                <ul className={Styles.descriptioncontainer}>
                   <li>
-                    React.js, Redux, Javascript, Typescript, RTL, Jest and
-                    SonarQube
+                    Directed the development of a high-performance web
+                    application for clinical data analysis.
+                  </li>
+                  <li>
+                    Designed and implemented a Micro Frontend architecture to
+                    support modular and independent feature deployment.
+                  </li>
+                  <li>
+                    Worked with business users to refine requirements and
+                    develop automated analysis tools.
+                  </li>
+                  <li>
+                    Managed an iterative development cycle, delivering software
+                    updates every 3 weeks.
+                  </li>
+                  <li>
+                    Ensured code quality through rigorous testing and adherence
+                    to best practices.
+                  </li>
+                  <li>
+                    Oversaw code quality improvement and vulnerability
+                    management to maintain a robust application.
                   </li>
                 </ul>
+
+                <strong>Technologies Used:</strong>
+                <ul>
+                  <li>
+                    React.js, Redux, JavaScript, HTML, CSS, Git, Datadog, JIRA,
+                    Typescript
+                  </li>
+                </ul>
+
                 <strong>Domain:</strong>
                 <ul>
                   <li>Health Care</li>
