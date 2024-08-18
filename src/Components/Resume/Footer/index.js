@@ -14,7 +14,7 @@ const Footer = () => {
           onClick={(e) => {
             e.preventDefault();
             window.open(
-              "https://drive.google.com/file/d/1RFoaLlwqseoQuSPLXLrr444C1OFKUAiW/view?usp=sharing",
+              "https://drive.google.com/file/d/1bY8tkr3ubJq0641e8zKJvyiDEbu7zHQb/view?usp=share_link",
               "_blank"
             );
           }}
