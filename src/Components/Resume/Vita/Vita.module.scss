@@ -1,193 +1,193 @@
-$primary-color: #0074ba;
-$text-color: #555;
-$header-color: #333;
-$circle-size: 25px;
-$container-padding: 10px 30px;
+@use "../../../styling/variable" as var;
 
-// Base Styles
+p {
+  font-weight: 500;
+}
+
 .vita {
-  background-color: transparent;
-  color: $text-color;
+  background-color: var.$transparent-background;
+  color: var.$text-color;
   min-height: auto;
   position: relative;
   font-size: 1em;
   padding: 4rem 0;
+}
 
-  .header {
-    font-size: 2.625rem;
-    font-weight: bolder;
-    color: $header-color;
-    margin: 0 auto 1.5rem;
-    text-align: center;
-    left: 50%;
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  max-width: 110em;
+  margin: 0 auto;
+  font-size: 0.5em;
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0.375em auto;
   }
 
+  h1 {
+    font-weight: bolder;
+    margin: 0.375em auto;
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.375em;
+    background-color: var.$blue-background;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.1875em;
+  }
+}
+
+.vitacontent li {
+  font-size: 1rem;
+}
+
+.header {
+  font-size: 2.625rem;
+  font-weight: bolder;
+  color: var.$text-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.header {
+  left: 50%;
+}
+
+.container {
+  padding: 0.625em 1.875em;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.5625em;
+    height: 1.5625em;
+    right: -0.8125em;
+    background-color: var.$white-background;
+    border: 0.25em solid var.$blue-background;
+    top: 1.875em;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -0.75em;
+}
+
+.vitacontent {
+  padding: 1.25em 1.875em;
+  position: relative;
+}
+
+.highlightscontainer {
+  margin-top: 1em;
+
+  ul {
+    list-style-type: square;
+  }
+
+  strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.descriptioncontainer {
+  li {
+    list-style-type: square;
+  }
+
+  p {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 799px) {
+
   .timeline {
-    position: relative;
-    max-width: 110em;
-    margin: 0 auto;
-    font-size: 0.5em;
+    font-size: 0.75em;
 
     &::after {
-      content: "";
-      position: absolute;
-      width: 6px;
-      background-color: $primary-color;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
+      left: 1.9375em;
     }
 
     h2 {
-      font-size: 1.2rem;
-      margin: 6px auto;
+      font-size: 1rem;
+      margin: 0.375em auto;
     }
 
     h1 {
       font-weight: bolder;
-      margin: 6px auto;
-      font-size: 1rem;
-      text-decoration: underline;
+      margin: 0.375em auto;
+      font-size: 1.2em;
     }
 
     p {
-      font-weight: bold;
-      font-size: 1rem;
+      font-weight: 500;
+      font-size: 1.2em;
     }
+  }
 
-    .vitacontent {
-      padding: 20px 30px;
-      position: relative;
+  .highlightscontainer strong {
+    font-size: 1rem;
+  }
 
-      li {
-        font-size: 1rem;
-      }
-
-      .descriptioncontainer {
-        li {
-          list-style-type: square;
-        }
-
-        p{
-          font-weight: 500;
-        }
-      }
-
-      .highlightscontainer {
-        strong {
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-
-        ul {
-          list-style-type: square;
-        }
-      }
-    }
+  .header {
+    font-size: 1.875rem;
+    font-weight: bolder;
+    color: #333;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
   }
 
   .container {
-    padding: $container-padding;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+    width: 100%;
+    padding-left: 4.375em;
+    padding-right: 1.5625em;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: $circle-size;
-      height: $circle-size;
-      right: -13px;
-      background-color: white;
-      border: 4px solid $primary-color;
-      top: 30px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-
-    &.left {
-      left: 0;
-    }
-
-    &.right {
-      left: 50%;
-
-      &::after {
-        left: -12px;
-      }
+    &::before {
+      left: 3.75em;
+      border: medium solid var.$white-background;
+      border-width: 0.625em 0.625em 0.625em 0;
+      border-color: var.$transparent-background var.$white-background var.$transparent-background var.$transparent-background;
     }
   }
-}
 
-// Responsive Styles
-@media screen and (max-width: 799px) {
-  .timeline {
-    font-size: 0.5rem;
-
-    &::after {
-      left: 31px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      margin: 6px auto;
-    }
-
-    h1 {
-      font-weight: bolder;
-      margin: 6px auto;
-      font-size: 1.2rem;
-    }
-
-    li {
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .highlightscontainer {
-      strong {
-        font-size: 1.2rem;
-      }
-    }
-
-    .header {
-      font-size: 1.5rem;
-      font-weight: bolder;
-      color: $header-color;
-      margin: 1rem 0 2rem;
-      text-align: left;
-    }
-
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-
-      &::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
-
-      &.left::after,
-      &.right::after {
-        left: 18px;
-      }
-
-      &.right {
-        left: 1.5px;
-      }
-    }
+  .left::after,
+  .right::after {
+    left: 1.125em;
   }
-}
 
-// Global Styles
-* {
-  box-sizing: border-box;
+  .right {
+    left: 0.09375em;
+  }
 }

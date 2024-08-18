@@ -1,0 +1,91 @@
+@use "../../../styling/variable" as var; // Import variables if needed
+
+.navigation {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+
+    li {
+      a {
+        text-decoration: none;
+        font-weight: bolder;
+        display: block;
+        color: #0074ba;
+        padding: 0.5rem 2rem;
+        font-weight: bolder;
+
+        &:hover {
+          color: black;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        border: transparent;
+        margin: 1rem;
+        color: white;
+        font-size: 1.25rem; // Adjusted from 20px
+      }
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    background-color: transparent;
+    min-height: 5vh;
+
+    ul {
+      overflow: hidden;
+      background-color: transparent;
+
+      li {
+        float: right;
+
+        a {
+          text-align: center;
+          font-size: 1.5rem; // Adjusted from 150%
+          font-weight: bolder;
+
+          &:hover {
+            background-color: #0074ba;
+            color: #ffffff !important;
+          }
+        }
+
+        button {
+          font-size: 1.25rem; // Adjusted from 20px
+        }
+      }
+    }
+
+    .heading {
+      float: left !important;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Mobile Styles
+@media only screen and (max-width: 799px) {
+  .navigation {
+    .menu {
+      li {
+        a {
+          font-size: 1rem; // Adjusted for smaller screens
+          padding: 0.5rem 1rem; // Adjusted padding for smaller screens
+        }
+
+        button {
+          font-size: 1rem; // Adjusted for smaller screens
+          margin: 0.5rem; // Adjusted margin for smaller screens
+        }
+      }
+    }
+  }
+}

@@ -2,16 +2,22 @@
 $primary-color: #0074ba;
 $secondary-color: #555;
 $tertiary-color: #333;
-$light-background: #ffffff;
-$hover-shadow: rgba(219, 82, 82, 0.2);
+$background-color: #ffffff;
+$hover-shadow-color: rgba(0, 0, 0, 0.1);
 $font-size-large: 2.625rem;
 $font-size-medium: 2rem;
 $font-size-small: 1.2rem;
 $font-size-xsmall: 1rem;
 $margin-top-large: 4vh;
 $margin-bottom-medium: 2vh;
-$padding: 1.4rem;
-$border-left-width: 0.3rem;
+$padding: 1.5rem;
+$border-radius: 0.75rem; // Slightly rounded corners
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow
+$hover-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); // Slightly enhanced shadow on hover
+$transition-time: 0.2s; // Reduced transition time for subtle effects
+$mobile-padding: 1rem; // Reduced padding for mobile
+$mobile-font-size-small: 1.1rem; // Smaller font size for mobile
+$mobile-font-size-xsmall: 0.9rem; // Smaller font size for mobile
 
 // Top Container
 .topcontainer {
@@ -50,6 +56,7 @@ $border-left-width: 0.3rem;
     margin-right: auto;
     margin-bottom: $margin-bottom-medium;
     text-align: center;
+    text-transform: uppercase;
   }
 
   h3 {
@@ -63,7 +70,20 @@ $border-left-width: 0.3rem;
     color: $secondary-color;
     margin-bottom: 1rem;
     font-size: $font-size-xsmall;
-    list-style-type: square;
+    position: relative;
+    padding-left: 1.5rem; // Adjust padding for custom bullet
+
+    list-style-type: none; // Remove default bullet
+
+    &::before {
+      content: "•";
+      color: $primary-color;
+      font-weight: bold;
+      position: absolute;
+      left: 0; // Position the bullet to the left
+      font-size: 1.2rem;
+      line-height: 1.2; // Adjust line height for vertical alignment
+    }
   }
 
   p {
@@ -80,26 +100,72 @@ $border-left-width: 0.3rem;
 
 // Card Component
 .card {
-  background: $light-background;
+  background: $background-color;
   font-size: $font-size-medium;
   max-width: 100vw;
-  margin: 2rem;
+  margin: 2rem auto; // Center cards in view
   padding: $padding;
-  transition: 0.25s;
-  border-left: $border-left-width solid $primary-color;
-
-  img {
-    max-height: 7rem;
-    max-width: 7rem;
-    position: relative;
-  }
+  border-radius: $border-radius; // Slightly rounded corners
+  box-shadow: $box-shadow; // Subtle shadow
+  transition: box-shadow $transition-time ease; // Smooth transition for shadow
+  border-left: 0.4rem solid $primary-color; // Slightly thicker border
 
   &:hover {
-    box-shadow: 0 10px 5px 0 $hover-shadow;
+    box-shadow: $hover-box-shadow; // Enhanced shadow on hover
+  }
+
+  img {
+    max-height: 7rem; // Standard image size
+    max-width: 7rem;
+    border-radius: $border-radius; // Rounded corners for images
+  }
+
+  h2 {
+    font-size: $font-size-medium;
+    font-weight: bolder;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  p,
+  li {
+    color: $secondary-color;
+    font-size: $font-size-xsmall;
+    margin-bottom: 1rem;
   }
 }
 
-// Media Query
+// Media Queries
+@media screen and (max-width: 768px) {
+  .projects {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 1rem; // Reduced padding for mobile
+  }
+
+  .card {
+    margin: 1.5rem auto; // Adjust margins for smaller screens
+    padding: $mobile-padding; // Reduced padding
+  }
+
+  h2 {
+    font-size: $mobile-font-size-small; // Adjust font size for smaller screens
+  }
+
+  li {
+    font-size: $mobile-font-size-xsmall; // Adjust font size for smaller screens
+    padding-left: 1rem; // Adjust padding for custom bullet
+  }
+
+  p {
+    font-size: $mobile-font-size-xsmall; // Adjust font size for smaller screens
+  }
+
+  .topcontainer {
+    max-width: 90%; // Adjust container width for smaller screens
+  }
+}
+
 @media screen and (max-width: 358px) {
   .card {
     margin-left: auto;

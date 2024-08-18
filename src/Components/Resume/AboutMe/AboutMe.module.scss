@@ -1,0 +1,52 @@
+$background-color: transparent;
+$text-color: #555;
+$heading-color: #333;
+$font-size-large: 2rem; // Reduced font size for headings
+$font-size-medium: 1.125rem; // Reduced font size for paragraphs
+$font-size-small: 2rem; // Font size for mobile headings
+$font-size-xsmall: 1rem; // Font size for mobile paragraphs
+$line-height: 1.5;
+$margin-vertical: 4vh;
+$margin-horizontal: 4vw;
+$padding-vertical: 2rem;
+$max-width-desktop: 50em;
+$max-width-mobile: 90%;
+
+.aboutme {
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0 auto;
+  max-width: $max-width-desktop;
+  padding: $padding-vertical $margin-horizontal;
+
+  h1 {
+    font-size: $font-size-large;
+    font-weight: bolder;
+    color: $heading-color;
+    margin: $margin-vertical auto;
+    text-align: center;
+  }
+
+  p {
+    font-size: $font-size-medium;
+    line-height: $line-height;
+    margin: $margin-vertical 0;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .aboutme {
+    max-width: $max-width-mobile;
+    padding: 2rem;
+
+    h1 {
+      font-size: $font-size-small; // Smaller font size for mobile headings
+      margin-top: 2vh;
+    }
+
+    p {
+      font-size: $font-size-xsmall; // Smaller font size for mobile paragraphs
+      margin: 2vh 1rem;
+    }
+  }
+}

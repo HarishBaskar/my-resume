@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Navigation.module.css";
+import styles from "./Navigation.module.scss";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../../Constants/Routes";
 
