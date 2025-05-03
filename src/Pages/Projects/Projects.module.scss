@@ -135,6 +135,14 @@ $mobile-font-size-xsmall: 0.9rem; // Smaller font size for mobile
   }
 }
 
+.projectTitle {
+  font-size: $mobile-font-size-small;
+}
+
+.projectDescription {
+  font-size: $mobile-font-size-xsmall;
+}
+
 // Media Queries
 @media screen and (max-width: 768px) {
   .projects {
@@ -148,16 +156,11 @@ $mobile-font-size-xsmall: 0.9rem; // Smaller font size for mobile
     padding: $mobile-padding; // Reduced padding
   }
 
-  h2 {
+  .projectTitle {
     font-size: $mobile-font-size-small; // Adjust font size for smaller screens
   }
 
-  li {
-    font-size: $mobile-font-size-xsmall; // Adjust font size for smaller screens
-    padding-left: 1rem; // Adjust padding for custom bullet
-  }
-
-  p {
+  .projectDescription {
     font-size: $mobile-font-size-xsmall; // Adjust font size for smaller screens
   }
 

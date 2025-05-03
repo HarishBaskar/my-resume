@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import Styles from "./Testimonials.module.css";
 import ColleaguePic from "../../../Images/samplepic.png";
 
@@ -36,9 +37,16 @@ const Testimonials = () => {
 
   const colleagues = testimonials.map((testimonial, index) => {
     return (
-      <div className={Styles.card}>
+      <div className={Styles.card} key={index}>
         <div className={Styles.colleagueimage}>
-          <img id="pictureImage" src={testimonial.picture} alt="Portrait" />
+          <Image 
+            id="pictureImage" 
+            src={testimonial.picture} 
+            alt={`Portrait of ${testimonial.name}`}
+            width={200}
+            height={200}
+            priority={index === 0}
+          />
         </div>
         <div className={Styles.container}>
           <h2>{testimonial.name}</h2>

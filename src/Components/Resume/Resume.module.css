@@ -32,6 +32,16 @@
   margin-right: 2vw;
 }
 
+.fallbackContainer {
+  padding: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  background-color: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  color: #b71c1c;
+}
+
 @media screen and (max-width: 600px) {
   .whitesection {
     padding: 2vw;
