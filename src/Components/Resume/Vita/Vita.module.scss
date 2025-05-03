@@ -1,20 +1,21 @@
-@use "../../../styling/variable" as var;
+$white-background: #ffffff;
+$transparent-background: transparent;
+$blue-background: #0074ba;
+$light-blue-background: #ccebff;
+$horizontal-line-color: #ff470f;
+$card-color: rgb(255, 204, 204, 0.2);
+$text-color: #333;
+$black-color: black;
+$footer-button-shadow: rgba(0, 0, 0, 0.2);
 
-p {
-  font-weight: 500;
-}
 
 .vita {
-  background-color: var.$transparent-background;
-  color: var.$text-color;
+  background-color: $transparent-background;
+  color: $text-color;
   min-height: auto;
   position: relative;
   font-size: 1em;
   padding: 4rem 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .timeline {
@@ -44,7 +45,7 @@ p {
     content: "";
     position: absolute;
     width: 0.375em;
-    background-color: var.$blue-background;
+    background-color: $blue-background;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -59,7 +60,7 @@ p {
 .header {
   font-size: 2.625rem;
   font-weight: bolder;
-  color: var.$text-color;
+  color: $text-color;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
@@ -82,8 +83,8 @@ p {
     width: 1.5625em;
     height: 1.5625em;
     right: -0.8125em;
-    background-color: var.$white-background;
-    border: 0.25em solid var.$blue-background;
+    background-color: $white-background;
+    border: 0.25em solid $blue-background;
     top: 1.875em;
     border-radius: 50%;
     z-index: 1;
@@ -176,9 +177,9 @@ p {
 
     &::before {
       left: 3.75em;
-      border: medium solid var.$white-background;
+      border: medium solid $white-background;
       border-width: 0.625em 0.625em 0.625em 0;
-      border-color: var.$transparent-background var.$white-background var.$transparent-background var.$transparent-background;
+      border-color: $transparent-background $white-background $transparent-background $transparent-background;
     }
   }
 

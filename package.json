@@ -4,31 +4,38 @@
   "private": true,
   "description": "Harish Baskar's personal website.",
   "author": "Harish Baskar",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "classnames": "^2.2.6",
-    "firebase": "^8.3.0",
-    "firebase-tools": "^9.6.1",
-    "nvm": "^0.0.4",
-    "react": "^16.13.1",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-parallax": "^3.0.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "sass": "^1.77.8"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && firebase deploy"
+  },
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vercel/analytics": "^1.5.0",
+    "classnames": "^2.3.2",
+    "critters": "^0.0.23",
+    "firebase": "^10.0.0",
+    "framer-motion": "^12.9.4",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-parallax": "^3.5.1",
+    "sass": "^1.69.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "firebase-tools": "^12.0.0",
+    "typescript": "^5.0.0"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "next"
   },
   "browserslist": {
     "production": [

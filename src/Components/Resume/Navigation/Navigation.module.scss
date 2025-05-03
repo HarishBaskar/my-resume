@@ -1,89 +1,116 @@
-@use "../../../styling/variable" as var; // Import variables if needed
+// Color variables
+$white-background: #ffffff;
+$transparent-background: transparent;
+$blue-background: #0074ba;
+$light-blue-background: #ccebff;
+$text-color: #333;
+$shadow-color: rgba(0, 116, 186, 0.15);
 
 .navigation {
-  background-color: transparent;
-  position: relative;
-  z-index: 10;
+  background-color: rgba($white-background, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem 2rem; // Reduced from 1rem
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px $shadow-color;
 
   .menu {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: auto;
-    background-color: transparent;
+    max-width: 1400px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem; // Reduced from 2rem
 
     li {
+      position: relative;
+      
       a {
         text-decoration: none;
-        font-weight: bolder;
-        display: block;
-        color: #0074ba;
-        padding: 0.5rem 2rem;
-        font-weight: bolder;
+        display: inline-block;
+        color: $text-color;
+        padding: 0.5rem 1.5rem; // Reduced from 1rem 2rem
+        font-size: 1rem; // Reduced from 1.1rem
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 8px; // Reduced from 12px
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px; // Adjusted position
+          left: 50%;
+          width: 0;
+          height: 2px; // Reduced from 3px
+          background-color: rgba($light-blue-background, 0.3);
+          transition: all 0.4s ease;
+          transform: translateX(-50%);
+        }
 
         &:hover {
-          color: black;
-        }
-      }
-
-      button {
-        background-color: transparent;
-        border: transparent;
-        margin: 1rem;
-        color: white;
-        font-size: 1.25rem; // Adjusted from 20px
-      }
-    }
-  }
-
-  @media only screen and (min-width: 800px) {
-    background-color: transparent;
-    min-height: 5vh;
-
-    ul {
-      overflow: hidden;
-      background-color: transparent;
-
-      li {
-        float: right;
-
-        a {
-          text-align: center;
-          font-size: 1.5rem; // Adjusted from 150%
-          font-weight: bolder;
-
-          &:hover {
-            background-color: #0074ba;
-            color: #ffffff !important;
+          color: $blue-background;
+          background-color: rgba($light-blue-background, 0.3);
+          transform: translateY(-2px); // Reduced from -3px
+          
+          &::after {
+            width: 70%;
           }
         }
 
-        button {
-          font-size: 1.25rem; // Adjusted from 20px
+        &.active {
+          background-color: $blue-background;
+          color: $white-background;
+          box-shadow: 0 4px 15px rgba($blue-background, 0.25); // Reduced shadow
+          transform: translateY(-1px); // Reduced from -2px
+          
+          &::after {
+            width: 90%;
+            background-color: $white-background;
+          }
+
+          &:hover {
+            transform: translateY(-2px); // Reduced from -4px
+            box-shadow: 0 6px 20px rgba($blue-background, 0.3); // Reduced shadow
+          }
         }
       }
     }
-
-    .heading {
-      float: left !important;
-      font-size: 1.5rem;
-    }
   }
-}
 
-// Mobile Styles
-@media only screen and (max-width: 799px) {
-  .navigation {
+  @media only screen and (max-width: 799px) {
+    padding: 0.5rem; // Reduced from 1rem
+    
     .menu {
-      li {
-        a {
-          font-size: 1rem; // Adjusted for smaller screens
-          padding: 0.5rem 1rem; // Adjusted padding for smaller screens
-        }
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem; // Reduced from 1rem
 
-        button {
-          font-size: 1rem; // Adjusted for smaller screens
-          margin: 0.5rem; // Adjusted margin for smaller screens
+      li {
+        width: 100%;
+        
+        a {
+          width: 100%;
+          text-align: center;
+          font-size: 1rem; // Reduced from 1.2rem
+          padding: 0.8rem; // Reduced from 1.2rem
+          border-radius: 6px; // Reduced from 8px
+          
+          &::after {
+            display: none;
+          }
+          
+          &:hover {
+            transform: translateY(0);
+            background-color: rgba($light-blue-background, 0.3);
+          }
+
+          &.active {
+            transform: none;
+            box-shadow: 0 2px 10px rgba($blue-background, 0.2); // Reduced shadow
+          }
         }
       }
     }
