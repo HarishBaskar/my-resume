@@ -77,10 +77,11 @@ const Resume = () => {
         </div>
 
         <ParallaxItem />
-
-        <SectionWithFallback name="experience">
-          <Vita />
-        </SectionWithFallback>
+        <div className={Styles.whitesection}>
+          <SectionWithFallback name="experience">
+            <Vita />
+          </SectionWithFallback>
+        </div>
 
         <ParallaxItem />
 

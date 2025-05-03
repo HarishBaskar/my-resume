@@ -74,7 +74,7 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <div className={Styles.projects}>
-      <h1>My Projects</h1>
+      <h1 className={Styles.pageTitle}>My Projects</h1>
       <div className={Styles.projectsGrid}>
         {projects.map((project) => (
           <div key={project.id} id={project.id} className={Styles.projectCard}>
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
               />
             </div>
             <div className={Styles.projectContent}>
-              <h2>{project.title}</h2>
+              <h2 className={Styles.projectTitle}>{project.title}</h2>
               <p className={Styles.description}>{project.description}</p>
               <div className={Styles.role}>
                 <strong>Role:</strong> {project.role}

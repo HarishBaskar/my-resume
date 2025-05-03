@@ -1,5 +1,5 @@
 import React from "react";
-import PrimaryImage from "./PrimaryImage/PrimaryImage";
+// import PrimaryImage from "./PrimaryImage/PrimaryImage";
 import Main from "./Main/Main";
 import Styles from "./Header.module.css";
 
@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
   return (
     <div>
       <div className={Styles.content}>
-        <PrimaryImage />
+        {/* <PrimaryImage /> */}
         <Main personalInfo={personalInfo} />
       </div>
       <div className={Styles.arrowcontainer}>

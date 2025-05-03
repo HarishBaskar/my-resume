@@ -1,109 +1,194 @@
-$primary-color: #0074ba;
-$text-color: #333;
 $white-background: #ffffff;
+$transparent-background: transparent;
+$blue-background: #0074ba;
+$light-blue-background: #ccebff;
 $horizontal-line-color: #ff470f;
+$card-color: rgb(255, 204, 204, 0.2);
+$text-color: #333;
+$black-color: black;
+$footer-button-shadow: rgba(0, 0, 0, 0.2);
+
 
 .vita {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  margin: 1rem;
-  padding: 2rem;
-}
-
-.vitaHeader {
-  font-size: 2rem;
-  font-weight: bolder;
-  color: $primary-color;
-  margin: 0 auto 2vh;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.vitaSubHeader {
+  background-color: $transparent-background;
   color: $text-color;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  min-height: auto;
+  position: relative;
+  font-size: 1em;
+  padding: 4rem 0;
 }
 
-.vitaList {
-  margin-bottom: 2rem;
+.timeline {
+  position: relative;
+  max-width: 110em;
+  margin: 0 auto;
+  font-size: 0.5em;
 
-  li {
-    color: $text-color;
-    margin-bottom: 1rem;
+  h2 {
+    font-size: 1.2rem;
+    margin: 0.375em auto;
+  }
+
+  h1 {
+    font-weight: bolder;
+    margin: 0.375em auto;
     font-size: 1rem;
-    position: relative;
-    padding-left: 1.5rem;
-    list-style-type: none;
+    text-decoration: underline;
+  }
 
-    &::before {
-      content: "•";
-      color: $primary-color;
-      font-weight: bold;
-      position: absolute;
-      left: 0;
-      font-size: 1.2rem;
-      line-height: 1.2;
+  p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.375em;
+    background-color: $blue-background;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.1875em;
+  }
+}
+
+.vitacontent li {
+  font-size: 1rem;
+}
+
+.header {
+  font-size: 2.625rem;
+  font-weight: bolder;
+  color: $text-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.header {
+  left: 50%;
+}
+
+.container {
+  padding: 0.625em 1.875em;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.5625em;
+    height: 1.5625em;
+    right: -0.8125em;
+    background-color: $white-background;
+    border: 0.25em solid $blue-background;
+    top: 1.875em;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -0.75em;
+}
+
+.vitacontent {
+  padding: 1.25em 1.875em;
+  position: relative;
+}
+
+.highlightscontainer {
+  margin-top: 1em;
+
+  ul {
+    list-style-type: square;
+  }
+
+  strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.descriptioncontainer {
+  li {
+    list-style-type: square;
+  }
+
+  p {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 799px) {
+
+  .timeline {
+    font-size: 0.75em;
+
+    &::after {
+      left: 1.9375em;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin: 0.375em auto;
+    }
+
+    h1 {
+      font-weight: bolder;
+      margin: 0.375em auto;
+      font-size: 1.2em;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 1.2em;
     }
   }
-}
 
-.vitaSection {
-  background: $white-background;
-  font-size: 2rem;
-  max-width: 100vw;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease;
-  border-left: 0.4rem solid $primary-color;
-
-  &:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.vitaDate {
-  color: $text-color;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.vitaCompany {
-  color: $primary-color;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.vitaRole {
-  color: $text-color;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .vita {
-    margin: 0.5rem;
-    padding: 1rem;
+  .highlightscontainer strong {
+    font-size: 1rem;
   }
 
-  .vitaSection {
-    margin: 1.5rem auto;
-    padding: 1rem;
+  .header {
+    font-size: 1.875rem;
+    font-weight: bolder;
+    color: #333;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
   }
 
-  .vitaHeader {
-    font-size: 1.5rem;
+  .container {
+    width: 100%;
+    padding-left: 4.375em;
+    padding-right: 1.5625em;
+
+    &::before {
+      left: 3.75em;
+      border: medium solid $white-background;
+      border-width: 0.625em 0.625em 0.625em 0;
+      border-color: $transparent-background $white-background $transparent-background $transparent-background;
+    }
   }
 
-  .vitaList li {
-    font-size: 0.9rem;
-    padding-left: 1rem;
+  .left::after,
+  .right::after {
+    left: 1.125em;
+  }
+
+  .right {
+    left: 0.09375em;
   }
 }

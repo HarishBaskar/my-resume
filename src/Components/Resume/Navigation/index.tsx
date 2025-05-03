@@ -12,7 +12,6 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
   { path: "/projects", label: "Projects" }
 ];
 
@@ -21,7 +20,7 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className={Styles.navigation}>
-      <ul>
+      <ul className={Styles.menu}>
         {navItems.map(({ path, label }) => (
           <li key={path}>
             <Link 
