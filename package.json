@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
     "firebase": "^8.3.0",
-    "firebase-tools": "^9.6.1",
+    "firebase-tools": "^13.27.0",
     "nvm": "^0.0.4",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
@@ -18,7 +18,7 @@
     "react-helmet": "^6.1.0",
     "react-parallax": "^3.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "sass": "^1.77.8"
   },
   "scripts": {
